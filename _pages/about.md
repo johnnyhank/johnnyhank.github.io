@@ -11,7 +11,11 @@ I am a third year undergraduate student from [School of Electronic Information a
 
 I am very fortunate to be advised by [Assoc. Prof. Qingqing Wu](https://wnt.sjtu.edu.cn/qingqingwu/index.html) of [Department of Electronic Engineering](https://ee.sjtu.edu.cn/), Shanghai Jiao Tong University.
 
+<!--
+
 You can find my CV here: [ZHENG LIHAN's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
+
+-->
 
 [Email](mailto:zhenglihan@sjtu.edu.cn) / [Github](https://github.com/johnnyhank) / [Wechat](../images/wechat.jpg) / [CSDN](https://blog.csdn.net/weixin_73831908?spm=1000.2115.3001.5343)
 
