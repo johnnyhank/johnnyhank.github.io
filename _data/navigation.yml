@@ -23,6 +23,8 @@ main:
   #- title: "CV"
   #  url: /cv/
 
+  - title: "Experiences"
+    url: /experiences/
   - title: "Awards"
     url: /awards/
   - title: "Course Grades"  
