@@ -15,6 +15,11 @@ You can find my CV here: [ZHENG LIHAN's Curriculum Vitae](../assets/Curriculum_V
 
 [Email](mailto:zhenglihan@sjtu.edu.cn) / [Github](https://github.com/johnnyhank) / [Wechat](../images/wechat.jpg) / [CSDN](https://blog.csdn.net/weixin_73831908?spm=1000.2115.3001.5343)
 
+Awards
+======
+2023-2024 National Scholarship(本科生国家奖学金)
+2023-2024 
+
 <!--
 A data-driven personal website
 ======
