@@ -24,7 +24,7 @@ This project ranked **3rd** in 12 Groups.
 Development of autonomous drawing system for mobile robots in unfamiliar environments
 ======
 
-June 2023 - September 2023 | Summer scientific research trainees of SJTU Brain-inspired Application Technology Center
+June 2023 \- September 2023 | Summer scientific research trainees of SJTU Brain-inspired Application Technology Center
 
 (1) Principle exploration: Learned ROS system development knowledge, read independent exploration algorithm literature, and sorted out the independent exploration drawing framework
 
@@ -36,7 +36,7 @@ June 2023 - September 2023 | Summer scientific research trainees of SJTU Brain-i
 Desktop Intelligent Auxiliary Air Conditioning Control Box Development
 ======
 
-September 2022 - January 2023 | Group Project of Introduction to Engineering
+September 2022 \- January 2023 | Group Project of Introduction to Engineering
 
 This project got **the first prize** in the course.
 
