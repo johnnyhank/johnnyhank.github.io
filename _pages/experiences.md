@@ -17,9 +17,9 @@ This project ranked **3rd** in 12 Groups.
 
 (3) Network layer: Used Raspberry Pi and ESP32 to initially process the sensor data and send it to the platform layer.
 
-(4) Platform layer: Used MQTT to transmit data, deploy Cloud Server based on EMQX, and cloud database based on Alibaba Cloud, and complete data training.
+(4) Platform layer: Used MQTT to transmit data, deployed Cloud Server based on EMQX, and cloud database based on Alibaba Cloud, and completed data training.
 
-(5) Application layer: Established a user's front-end website, establish front-end and back-end data transmission through WebSocket, and use MJPG-Streamer to display camera images in real time.
+(5) Application layer: Established a user's front-end website, establish front-end and back-end data transmission through WebSocket, and used MJPG-Streamer to display camera images in real time.
 
 Development of autonomous drawing system for mobile robots in unfamiliar environments
 ======
@@ -37,6 +37,7 @@ Desktop Intelligent Auxiliary Air Conditioning Control Box Development
 ======
 
 September 2022 - January 2023 | Group Project of Introduction to Engineering
+
 This project got **the first prize** in the course.
 
 (1) Arduino development
