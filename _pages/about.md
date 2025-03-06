@@ -7,7 +7,13 @@ redirect_from:
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+I am a third year undergraduate student from [School of Electronic Information and Electrical Engineering](https://www.seiee.sjtu.edu.cn),[Shanghai Jiao Tong University](https://www.sjtu.edu.cn). My research interests include machine learning and wireless communication.
+
+I am very fortunate to be advised by [Assoc. Prof.Qingqing Wu](https://wnt.sjtu.edu.cn/qingqingwu/index.html) of [Department of Electronic Engineering](https://ee.sjtu.edu.cn/), Shanghai Jiao Tong University.
+
+You can find my CV here: [ZHENG LIHAN's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
+
+[Email](mailto:zhenglihan@sjtu.edu.cn) / [Github](https://github.com/johnnyhank) / [Wechat](../images/wechat.jpg) / [CSDN](https://blog.csdn.net/weixin_73831908?spm=1000.2115.3001.5343)
 
 A data-driven personal website
 ======
