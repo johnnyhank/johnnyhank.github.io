@@ -17,8 +17,18 @@ You can find my CV here: [ZHENG LIHAN's Curriculum Vitae](../assets/Curriculum_V
 
 Awards
 ======
-2023-2024 National Scholarship(本科生国家奖学金)
-2023-2024 
+2023-2024 National Scholarship
+
+2023-2024 The Second Prize Scholarship of Shanghai Jiao Tong University
+
+2022-2023 The Third Prize Scholarship of Shanghai Jiao Tong University
+
+2022-2023 Merit Student of Shanghai Jiao Tong University
+
+2022-2023 Excellent League Member of Shanghai Jiao Tong University
+
+2022-2023 The Third Prize of National Mathematical Modeling Contest
+
 
 <!--
 A data-driven personal website
