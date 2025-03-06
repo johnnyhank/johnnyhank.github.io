@@ -7,7 +7,7 @@ author_profile: true
 
 Smart Driver Moniter System Based on IoT
 ======
-July 2024 - 12 | Group Project of AIoT of the National University of Singapore School of Computing Summer Workshop 2024
+July 2024 | Group Project of AIoT of the National University of Singapore School of Computing Summer Workshop 2024
 
 This project ranked **3rd** in 12 Groups.
 
