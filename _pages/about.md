@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a third year undergraduate student from [School of Electronic Information and Electrical Engineering](https://www.seiee.sjtu.edu.cn), [Shanghai Jiao Tong University](https://www.sjtu.edu.cn). My research interests include machine learning and wireless communication.
+I am a third year undergraduate student from [School of Electronic Information and Electrical Engineering](https://www.seiee.sjtu.edu.cn), [Shanghai Jiao Tong University](https://www.sjtu.edu.cn).
 
 I am very fortunate to be advised by [Assoc. Prof. Qingqing Wu](https://wnt.sjtu.edu.cn/qingqingwu/index.html) of [Department of Electronic Engineering](https://ee.sjtu.edu.cn/), Shanghai Jiao Tong University.
 
@@ -16,6 +16,8 @@ I am very fortunate to be advised by [Assoc. Prof. Qingqing Wu](https://wnt.sjtu
 You can find my CV here: [ZHENG LIHAN's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
 
 -->
+
+My research interests include machine learning and wireless communication.
 
 [Email](mailto:zhenglihan@sjtu.edu.cn) / [Github](https://github.com/johnnyhank) / [Wechat](../images/wechat.jpg) / [CSDN](https://blog.csdn.net/weixin_73831908?spm=1000.2115.3001.5343)
 
