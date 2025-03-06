@@ -37,6 +37,7 @@ Desktop Intelligent Auxiliary Air Conditioning Control Box Development
 ======
 
 September 2022 - January 2023 | Group Project of Introduction to Engineering
+This project got **the first prize** in the course.
 
 (1) Arduino development
 
