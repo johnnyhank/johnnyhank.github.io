@@ -7,7 +7,7 @@ author_profile: true
 
 Hybrid Precoder Design Based on DRL
 ======
-Feb 2025 until now | Laboratory scientific research projects under the guidance of Assoc. Prof. Qingqing Wu
+Feb 2025 untill now | Laboratory scientific research projects under the guidance of Assoc. Prof. Qingqing Wu
 
 Smart Driver Moniter System Based on IoT
 ======
