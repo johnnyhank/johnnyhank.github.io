@@ -13,7 +13,7 @@ Smart Driver Moniter System Based on IoT
 ======
 July 2024 | Group Project of AIoT of the National University of Singapore School of Computing Summer Workshop 2024
 
-This project ranked **3rd** in 12 Groups.
+This project ranked **3rd** in 12 Groups. Github repository: https://github.com/8zym/AIOT_group3.
 
 (1) Group leader: Determined the topic of comprehensive fatigue detection through facial features, posture, heart rate, weather and other data.
 
