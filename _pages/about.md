@@ -11,11 +11,7 @@ I am a third year undergraduate student from [School of Electronic Information a
 
 I am very fortunate to be advised by [Assoc. Prof. Qingqing Wu](https://wnt.sjtu.edu.cn/qingqingwu/index.html) of [Department of Electronic Engineering](https://ee.sjtu.edu.cn/), Shanghai Jiao Tong University.
 
-<!--
-
-You can find my CV here: [ZHENG LIHAN's Curriculum Vitae](../assets/Curriculum_Vitae.pdf).
-
--->
+You can find my CV here: [ZHENG LIHAN's Curriculum Vitae](../_pages/Lihan_Zheng_PhD_Application_CV.pdf).
 
 My research interests include machine learning and wireless communication.
 
