@@ -9,9 +9,9 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "ZHENG, LIHAN / Personal Homepage"
+title                    : "Lihan Zheng / Personal Homepage"
 title_separator          : "-"
-name                     : &name "ZHENG, LIHAN"
+name                     : &name "Lihan Zheng"
 description              : &description "a third year undergraduate student from Shanghai Jiao Tong University"
 url                      : https://johnnyhank.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -23,7 +23,7 @@ repository               : "johnnyhank/johnnyhank.github.io"
 author:
   # Biographic information
   avatar           : "6661741252342_.png"
-  name             : "ZHENG, LIHAN"
+  name             : "Lihan Zheng"
   pronouns         : "he/him"  
   bio              : "An undergraduate student majoring in information engineering at Shanghai Jiao Tong University."
   location         : "Shanghai"
