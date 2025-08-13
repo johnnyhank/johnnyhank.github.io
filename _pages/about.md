@@ -7,14 +7,16 @@ redirect_from:
   - /about.html
 ---
 
-I am a third year undergraduate student from [School of Electronic Information and Electrical Engineering](https://www.seiee.sjtu.edu.cn), [Shanghai Jiao Tong University](https://www.sjtu.edu.cn).
+I am a fourth year undergraduate student from [School of Integrated Circuits (School of Information Science and Electronic Engineering)](https://icisee.sjtu.edu.cn/), [Shanghai Jiao Tong University](https://www.sjtu.edu.cn).
 
-I am very fortunate to be advised by [Assoc. Prof. Qingqing Wu](https://wnt.sjtu.edu.cn/qingqingwu/index.html) of [Department of Electronic Engineering](https://ee.sjtu.edu.cn/), Shanghai Jiao Tong University.
+I am very fortunate to be guided by [Assoc. Prof. Shu Sun](https://icisee.sjtu.edu.cn/jiaoshiml/sunshu.html) of [Institute of Wireless Communication Technology](https://ee.sjtu.edu.cn/Show.aspx?infolb=94&infoid=346&flag=42), Shanghai Jiao Tong University. And I am going to start my Ph.D. in [School of Integrated Circuits (School of Information Science and Electronic Engineering)](https://icisee.sjtu.edu.cn/), [Shanghai Jiao Tong University](https://www.sjtu.edu.cn) in September 2026.
 
 You can find my CV here: [ZHENG LIHAN's Curriculum Vitae](../_pages/Lihan_Zheng_PhD_Application_CV.pdf).
 
-My research interests include machine learning and wireless communication.
+Research Interests
 
+------
+My research interests lie in the field of physical layer technologies in wireless communications, including *OTFS, channel modeling and multiple access*. I am also keen to explore the integration of artificial intelligence and wireless communication technologies. My goal is to contribute my knowledge toward the digital and intelligent evolution of wireless communications in the 6G era.
 [Email](mailto:zhenglihan@sjtu.edu.cn) / [Github](https://github.com/johnnyhank) / [CSDN](https://blog.csdn.net/weixin_73831908?spm=1000.2115.3001.5343)
 
 
@@ -28,11 +30,11 @@ Many of the features of dynamic content management systems (like Wordpress) can 
 Getting started
 ======
 1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+2. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
+3. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
+4. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
+5. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
+6. Check status by going to the repository settings, in the "GitHub pages" section
 
 Site-wide configuration
 ------
