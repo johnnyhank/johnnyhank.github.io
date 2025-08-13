@@ -15,17 +15,6 @@ redirect_from:
   font-size: 1.05em;
 }
 
-.section-header {
-  font-size: 1.3em;
-  font-weight: 700;
-  color: #1a252f;
-  margin: 2.5em 0 0.8em 0;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  /* border-bottom: 1px solid #34495e; */
-  /* padding-bottom: 0.5em; */
-}
-
 .intro-section {
   background: #fdfdfd;
   padding: 2em;
@@ -86,24 +75,6 @@ redirect_from:
   color: #2c3e50;
 }
 
-.research-keywords {
-  display: inline-block;
-  background: #f8f9fa;
-  color: #2c3e50;
-  padding: 0.4em 1em;
-  margin: 0.3em 0.2em;
-  border: 1px solid #e9ecef;
-  font-weight: 600;
-  font-size: 0.95em;
-  letter-spacing: 0.3px;
-  transition: all 0.2s ease;
-}
-
-.research-keywords:hover {
-  background: #e9ecef;
-  transform: translateY(-1px);
-}
-
 .cv-note {
   margin-top: 1.5em;
   padding: 1em 0;
@@ -125,35 +96,6 @@ redirect_from:
   border-bottom: 1px solid #2c3e50;
 }
 
-.contact-section {
-  margin-top: 3em;
-  padding-top: 2em;
-  border-top: 1px solid #e9ecef;
-  text-align: center;
-}
-
-.contact-section a {
-  color: #495057;
-  text-decoration: none;
-  font-weight: 600;
-  margin: 0 1.5em;
-  padding: 0.6em 1.2em;
-  border: 1px solid #6c757d;
-  display: inline-block;
-  margin-bottom: 0.8em;
-  transition: all 0.3s ease;
-  letter-spacing: 0.3px;
-  text-transform: uppercase;
-  font-size: 0.9em;
-}
-
-.contact-section a:hover {
-  background: #495057;
-  color: white;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-
 @media (max-width: 768px) {
   .academic-profile {
     font-size: 1em;
@@ -164,20 +106,17 @@ redirect_from:
     margin: 1.5em 0;
   }
   
-  .section-header {
-    font-size: 1.1em;
-    margin: 2em 0 1em 0;
+  .quote-section {
+    padding: 1em;
+    margin: 0.8em 0 0.3em 0;
   }
   
-  .contact-section a {
-    display: block;
-    margin: 0.8em 0;
-    text-align: center;
+  .quote-text {
+    font-size: 0.85em;
   }
   
-  .research-keywords {
-    font-size: 0.9em;
-    padding: 0.3em 0.8em;
+  .quote-author {
+    font-size: 0.65em;
   }
 }
 </style>
