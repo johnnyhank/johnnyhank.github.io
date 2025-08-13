@@ -3,12 +3,12 @@
 <!-- 全局音乐播放器 -->
 <div id="globalMusicPlayer" class="music-player-container">
   <div class="music-player">
-    <div class="player-toggle" id="musicToggleBtn" onclick="console.log('直接点击测试'); document.getElementById('playerControls').classList.toggle('active');">
+    <div class="player-toggle" id="musicToggleBtn">
       <i class="fas fa-music"></i>
     </div>
     <div class="player-controls" id="playerControls">
       <div class="song-info">
-        <div class="song-title" id="songTitle">背景音乐播放器</div>
+        <div class="song-title" id="songTitle">背景音乐播放器1</div>
         <div class="song-artist" id="songArtist">点击播放按钮开始</div>
       </div>
       <div class="control-buttons">
@@ -242,16 +242,23 @@
     
     // 从localStorage恢复播放状态
     function restorePlayerState() {
+        console.log('恢复播放状态...');
         const savedState = JSON.parse(localStorage.getItem('musicPlayerState') || '{}');
         if (savedState.currentSong !== undefined) {
             currentSongIndex = savedState.currentSong;
+            console.log('恢复歌曲索引:', currentSongIndex);
         }
-        if (savedState.volume !== undefined) {
-            document.getElementById('volumeSlider').value = savedState.volume;
-            audio.volume = savedState.volume / 100;
+        if (savedState.volume !== undefined && audio) {
+            const volumeSlider = document.getElementById('volumeSlider');
+            if (volumeSlider) {
+                volumeSlider.value = savedState.volume;
+                audio.volume = savedState.volume / 100;
+                console.log('恢复音量:', savedState.volume);
+            }
         }
-        if (savedState.currentTime !== undefined && savedState.currentTime > 0) {
-            audio.currentTime = savedState.currentTime;
+        if (savedState.currentTime !== undefined && savedState.currentTime > 0 && audio) {
+            // 播放时间恢复放在loadSong中处理
+            console.log('准备恢复播放时间:', savedState.currentTime);
         }
     }
     
@@ -388,12 +395,23 @@
         console.log('=== 音乐播放器调试信息 ===');
         console.log('音乐图标按钮:', document.getElementById('musicToggleBtn'));
         console.log('控制面板:', document.getElementById('playerControls'));
+        console.log('播放按钮:', document.getElementById('playPauseBtn'));
         console.log('音频元素:', document.getElementById('backgroundAudio'));
         console.log('当前audio变量:', audio);
         console.log('播放列表:', playlist);
         console.log('当前歌曲索引:', currentSongIndex);
         console.log('播放状态:', isPlaying);
         console.log('=========================');
+    };
+    
+    // 测试播放函数
+    window.testPlay = function() {
+        console.log('测试播放函数被调用');
+        if (!audio) {
+            console.error('Audio元素未找到');
+            return;
+        }
+        togglePlayPause();
     };
     
     // 初始化事件监听器
@@ -405,12 +423,8 @@
         console.log('找到切换按钮:', toggleBtn);
         
         if (toggleBtn) {
-            // 移除可能存在的旧事件监听器
-            toggleBtn.onclick = null;
-            
             toggleBtn.addEventListener('click', function(e) {
-                console.log('事件监听器: Toggle button clicked');
-                e.preventDefault();
+                console.log('音乐图标被点击');
                 const controls = document.getElementById('playerControls');
                 console.log('找到控制面板:', controls);
                 if (controls) {
@@ -418,17 +432,6 @@
                     console.log('切换后类名:', controls.className);
                 }
             });
-            
-            // 同时也添加onclick作为备用
-            toggleBtn.onclick = function() {
-                console.log('Onclick备用: Toggle button clicked');
-                const controls = document.getElementById('playerControls');
-                if (controls) {
-                    controls.classList.toggle('active');
-                    console.log('Onclick切换后类名:', controls.className);
-                }
-            };
-            
             console.log('切换按钮事件监听器已绑定');
         } else {
             console.error('未找到音乐切换按钮!');
@@ -436,22 +439,34 @@
         
         // 播放/暂停按钮
         const playPauseBtn = document.getElementById('playPauseBtn');
+        console.log('找到播放按钮:', playPauseBtn);
         if (playPauseBtn) {
-            playPauseBtn.addEventListener('click', togglePlayPause);
+            playPauseBtn.addEventListener('click', function() {
+                console.log('播放按钮被点击');
+                togglePlayPause();
+            });
             console.log('播放按钮事件监听器已绑定');
+        } else {
+            console.error('未找到播放按钮!');
         }
         
         // 上一首按钮
         const prevBtn = document.getElementById('prevBtn');
         if (prevBtn) {
-            prevBtn.addEventListener('click', previousSong);
+            prevBtn.addEventListener('click', function() {
+                console.log('上一首按钮被点击');
+                previousSong();
+            });
             console.log('上一首按钮事件监听器已绑定');
         }
         
         // 下一首按钮
         const nextBtn = document.getElementById('nextBtn');
         if (nextBtn) {
-            nextBtn.addEventListener('click', nextSong);
+            nextBtn.addEventListener('click', function() {
+                console.log('下一首按钮被点击');
+                nextSong();
+            });
             console.log('下一首按钮事件监听器已绑定');
         }
         
@@ -459,6 +474,7 @@
         const volumeSlider = document.getElementById('volumeSlider');
         if (volumeSlider) {
             volumeSlider.addEventListener('input', function() {
+                console.log('音量滑块被调整到:', this.value);
                 setVolume(this.value);
             });
             console.log('音量滑块事件监听器已绑定');
