@@ -7,15 +7,100 @@ author_profile: true
 
 {% include base_path %}
 
+<style>
+.awards-container {
+  max-width: 100%;
+  margin: 20px 0;
+}
 
-National Scholarship, 2023-2024
+.award-item {
+  display: grid;
+  grid-template-columns: 2fr 3fr 1fr;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+  align-items: center;
+}
 
-The Second Prize Scholarship, Shanghai Jiao Tong University, 2023-2024 
+.award-item:last-child {
+  border-bottom: none;
+}
 
-The Third Prize Scholarship, Shanghai Jiao Tong University, 2022-2023 
+.award-name {
+  font-weight: 600;
+  color: #2c3e50;
+  text-align: left;
+}
 
-Merit Student, Shanghai Jiao Tong University, 2022-2023 
+.award-organization {
+  color: #7f8c8d;
+  font-style: italic;
+  text-align: center;
+  font-size: 0.9em;
+}
 
-Excellent League Member, Shanghai Jiao Tong University, 2022-2023
+.award-date {
+  color: #e74c3c;
+  font-weight: 500;
+  text-align: right;
+  white-space: nowrap;
+  font-size: 0.9em;
+}
 
-The Third Prize of National Mathematical Modeling Contest, 2022-2023
+@media (max-width: 768px) {
+  .award-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    text-align: left;
+  }
+  
+  .award-organization,
+  .award-date {
+    text-align: left;
+  }
+}
+</style>
+
+<div class="awards-container">
+  <div class="award-item">
+    <div class="award-name">National Scholarship</div>
+    <div class="award-organization">Ministry of Education, PRC</div>
+    <div class="award-date">Dec 2024</div>
+  </div>
+
+  <div class="award-item">
+    <div class="award-name">The Second Prize Scholarship</div>
+    <div class="award-organization">Shanghai Jiao Tong University</div>
+    <div class="award-date">Dec 2024</div>
+  </div>
+
+  <div class="award-item">
+    <div class="award-name">The Third Prize Scholarship</div>
+    <div class="award-organization">Shanghai Jiao Tong University</div>
+    <div class="award-date">Dec 2023</div>
+  </div>
+
+  <div class="award-item">
+    <div class="award-name">Three Good Student</div>
+    <div class="award-organization">Shanghai Jiao Tong University</div>
+    <div class="award-date">Oct 2023</div>
+  </div>
+
+  <div class="award-item">
+    <div class="award-name">Excellent League Member</div>
+    <div class="award-organization">Shanghai Jiao Tong University</div>
+    <div class="award-date">May 2023</div>
+  </div>
+
+  <div class="award-item">
+    <div class="award-name">The Third Prize of National Mathematical Modeling Contest</div>
+    <div class="award-organization">Shanghai Municipal Education Commission</div>
+    <div class="award-date">Nov 2023</div>
+  </div>
+
+  <div class="award-item">
+    <div class="award-name">Successful Participant of Mathematical Contest In Modeling</div>
+    <div class="award-organization">Consortium for Mathematics and its Applications</div>
+    <div class="award-date">May 2025</div>
+  </div>
+</div>
