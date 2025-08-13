@@ -151,7 +151,7 @@ author_profile: true
       </div>
     </div>
     <div class="experience-description">
-      Conducting theoretical study and simulation-based research on Orthogonal Time Frequency Space (OTFS) modulation in the delay-Doppler domain for high-mobility wireless communications.
+      Conducting theoretical study and simulation-based research on **Orthogonal Time Frequency Space (OTFS) modulation** in the delay-Doppler domain for high-mobility wireless communications.
     </div>
   </div>
 
@@ -175,15 +175,16 @@ author_profile: true
     <div class="experience-highlights">
       <ul class="highlight-list">
         <li class="highlight-item">Conducted literature review on related research topics and reproduced several relevant GitHub projects.</li>
-        <li class="highlight-item">Proposed an innovative hybrid precoder architecture to optimize spectral efficiency and BER.</li>
-        <li class="highlight-item">Applied (MA)DDPG and SAC to design the hybrid precoder based on deep reinforcement learning.</li>
+        <li class="highlight-item">Proposed an innovative **hybrid precoder architecture with the relief of the constraint of the phase shifters** to optimize S(I)NR.</li>
+        <li class="highlight-item">Applied **(MA)DDPG** and **SAC** to design the MU-SISO nad MU-MISO hybrid precoder based on deep reinforcement learning.</li>
       </ul>
     </div>
   </div>
 
   <div class="experience-item">
     <div class="experience-header">
-      <h3 class="experience-title">Multimodal Intelligent Robotic Assistant</h3>
+      <h3 class="experience-title">
+        <a href="https://github.com/johnnyhank/MIRA-Multimodal-Intelligent-Robotic-Assistant">Multimodal Intelligent Robotic Assistant</h3>
       <div class="experience-meta">
         <div class="meta-item">
           <span class="meta-icon">📅</span>
