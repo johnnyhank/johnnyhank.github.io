@@ -29,12 +29,12 @@ redirect_from:
 .intro-section {
   background: #fdfdfd;
   padding: 2em;
-  margin: 1em 0;
+  margin: 0.5em 0 1em 0;
 }
 
 .quote-section {
   text-align: center;
-  margin: 1.5em 0;
+  margin: 1.5em 0 0.8em 0;
   padding: 1.5em;
   background: #f8f9fa;
   border-left: 4px solid #6c757d;
