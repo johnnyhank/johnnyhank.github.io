@@ -32,6 +32,28 @@ redirect_from:
   margin: 1em 0;
 }
 
+.quote-section {
+  text-align: center;
+  margin: 1.5em 0;
+  padding: 1.5em;
+  background: #f8f9fa;
+  border-left: 4px solid #6c757d;
+  font-style: italic;
+  color: #495057;
+}
+
+.quote-text {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 0.8em;
+}
+
+.quote-author {
+  font-size: 0.9em;
+  color: #6c757d;
+  font-weight: 600;
+}
+
 .intro-section p {
   margin-bottom: 1em;
   text-align: justify;
@@ -161,6 +183,11 @@ redirect_from:
 </style>
 
 <div class="academic-profile">
+
+<div class="quote-section">
+<div class="quote-text">"The past is known, but fixed. The future is unknown, but shaped by design."</div>
+<div class="quote-author">— In the spirits of Claude Shannon and Tao Yuanming</div>
+</div>
 
 <div class="intro-section">
 <p>I am a fourth-year undergraduate student from the <span class="affiliation"><a href="https://icisee.sjtu.edu.cn/">School of Integrated Circuits (School of Information Science and Electronic Engineering)</a></span>, <span class="affiliation"><a href="https://www.sjtu.edu.cn">Shanghai Jiao Tong University</a></span>.</p>
