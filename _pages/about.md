@@ -43,15 +43,15 @@ redirect_from:
 }
 
 .quote-text {
-  font-size: 0.8em;
+  font-size: 0.9em;
   line-height: 1.6;
-  margin-bottom: 0.8em;
+  margin-bottom: 0.5em;
 }
 
 .quote-author {
-  font-size: 0.6em;
+  font-size: 0.7em;
   color: #6c757d;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .intro-section p {
