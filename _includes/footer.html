@@ -1,5 +1,403 @@
 {% include base_path %}
 
+<!-- 全局音乐播放器 -->
+<div id="globalMusicPlayer" class="music-player-container">
+  <div class="music-player">
+    <div class="player-toggle" onclick="toggleMusicPlayer()">
+      <i class="fas fa-music"></i>
+    </div>
+    <div class="player-controls" id="playerControls">
+      <div class="song-info">
+        <div class="song-title" id="songTitle">选择背景音乐</div>
+        <div class="song-artist" id="songArtist">点击选择</div>
+      </div>
+      <div class="control-buttons">
+        <button onclick="previousSong()" title="上一首"><i class="fas fa-step-backward"></i></button>
+        <button onclick="togglePlayPause()" id="playPauseBtn" title="播放/暂停"><i class="fas fa-play"></i></button>
+        <button onclick="nextSong()" title="下一首"><i class="fas fa-step-forward"></i></button>
+      </div>
+      <div class="volume-control">
+        <i class="fas fa-volume-down"></i>
+        <input type="range" id="volumeSlider" min="0" max="100" value="30" onchange="setVolume(this.value)">
+        <i class="fas fa-volume-up"></i>
+      </div>
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="time-display">
+          <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<audio id="backgroundAudio" preload="none"></audio>
+
+<style>
+.music-player-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.music-player {
+  background: rgba(44, 62, 80, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.player-toggle {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ecf0f1;
+  font-size: 1.5em;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.player-toggle:hover {
+  background: rgba(52, 73, 94, 0.8);
+  transform: scale(1.05);
+}
+
+.player-controls {
+  display: none;
+  padding: 20px;
+  min-width: 320px;
+  color: #ecf0f1;
+}
+
+.player-controls.active {
+  display: block;
+}
+
+.song-info {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.song-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #ecf0f1;
+}
+
+.song-artist {
+  font-size: 0.9em;
+  color: #bdc3c7;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.control-buttons button {
+  background: none;
+  border: none;
+  color: #ecf0f1;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.control-buttons button:hover {
+  background: rgba(52, 73, 94, 0.6);
+  transform: scale(1.1);
+}
+
+#playPauseBtn {
+  font-size: 1.4em;
+  width: 50px;
+  height: 50px;
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.volume-control i {
+  color: #bdc3c7;
+  font-size: 0.9em;
+}
+
+#volumeSlider {
+  flex: 1;
+  height: 4px;
+  border-radius: 2px;
+  background: #34495e;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+#volumeSlider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #3498db;
+  cursor: pointer;
+}
+
+.progress-container {
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 4px;
+  background: #34495e;
+  border-radius: 2px;
+  cursor: pointer;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #3498db;
+  border-radius: 2px;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+.time-display {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+  color: #95a5a6;
+  margin-top: 5px;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .music-player-container {
+    bottom: 10px;
+    right: 10px;
+  }
+  
+  .player-controls {
+    min-width: 280px;
+    padding: 15px;
+  }
+  
+  .player-toggle {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3em;
+  }
+}
+</style>
+
+<script>
+// 全局音乐播放器系统
+(function() {
+    // 音乐播放列表 - 您可以根据喜好修改
+    const playlist = [
+        {
+            title: "River Flows in You",
+            artist: "Yiruma",
+            src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" // 示例音频，请替换
+        },
+        {
+            title: "Canon in D",
+            artist: "Pachelbel",
+            src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" // 示例音频，请替换
+        },
+        {
+            title: "Gymnopédie No.1",
+            artist: "Erik Satie", 
+            src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" // 示例音频，请替换
+        }
+    ];
+    
+    let currentSongIndex = 0;
+    let isPlaying = false;
+    let audio = document.getElementById('backgroundAudio');
+    
+    // 从localStorage恢复播放状态
+    function restorePlayerState() {
+        const savedState = JSON.parse(localStorage.getItem('musicPlayerState') || '{}');
+        if (savedState.currentSong !== undefined) {
+            currentSongIndex = savedState.currentSong;
+        }
+        if (savedState.volume !== undefined) {
+            document.getElementById('volumeSlider').value = savedState.volume;
+            audio.volume = savedState.volume / 100;
+        }
+        if (savedState.currentTime !== undefined && savedState.currentTime > 0) {
+            audio.currentTime = savedState.currentTime;
+        }
+    }
+    
+    // 保存播放状态
+    function savePlayerState() {
+        const state = {
+            currentSong: currentSongIndex,
+            volume: document.getElementById('volumeSlider').value,
+            currentTime: audio.currentTime,
+            isPlaying: isPlaying
+        };
+        localStorage.setItem('musicPlayerState', JSON.stringify(state));
+    }
+    
+    // 加载歌曲
+    function loadSong(index) {
+        if (index < 0 || index >= playlist.length) return;
+        
+        const song = playlist[index];
+        audio.src = song.src;
+        document.getElementById('songTitle').textContent = song.title;
+        document.getElementById('songArtist').textContent = song.artist;
+        
+        // 恢复播放时间
+        const savedState = JSON.parse(localStorage.getItem('musicPlayerState') || '{}');
+        if (savedState.currentTime && index === savedState.currentSong) {
+            audio.addEventListener('canplay', function setTime() {
+                audio.currentTime = savedState.currentTime;
+                audio.removeEventListener('canplay', setTime);
+            });
+        }
+    }
+    
+    // 播放/暂停切换
+    window.togglePlayPause = function() {
+        if (audio.src === '') {
+            loadSong(currentSongIndex);
+        }
+        
+        if (isPlaying) {
+            audio.pause();
+            document.getElementById('playPauseBtn').innerHTML = '<i class="fas fa-play"></i>';
+            isPlaying = false;
+        } else {
+            audio.play().then(() => {
+                document.getElementById('playPauseBtn').innerHTML = '<i class="fas fa-pause"></i>';
+                isPlaying = true;
+            }).catch(e => {
+                console.log('播放失败:', e);
+                // 如果自动播放被阻止，显示提示
+                alert('请手动点击播放按钮启动音乐');
+            });
+        }
+        savePlayerState();
+    };
+    
+    // 上一首
+    window.previousSong = function() {
+        currentSongIndex = (currentSongIndex - 1 + playlist.length) % playlist.length;
+        loadSong(currentSongIndex);
+        if (isPlaying) {
+            audio.play();
+        }
+        savePlayerState();
+    };
+    
+    // 下一首
+    window.nextSong = function() {
+        currentSongIndex = (currentSongIndex + 1) % playlist.length;
+        loadSong(currentSongIndex);
+        if (isPlaying) {
+            audio.play();
+        }
+        savePlayerState();
+    };
+    
+    // 设置音量
+    window.setVolume = function(value) {
+        audio.volume = value / 100;
+        savePlayerState();
+    };
+    
+    // 切换播放器显示
+    window.toggleMusicPlayer = function() {
+        const controls = document.getElementById('playerControls');
+        controls.classList.toggle('active');
+    };
+    
+    // 进度条控制
+    document.getElementById('progressBar').addEventListener('click', function(e) {
+        const rect = this.getBoundingClientRect();
+        const pos = (e.clientX - rect.left) / rect.width;
+        audio.currentTime = pos * audio.duration;
+    });
+    
+    // 更新进度条
+    audio.addEventListener('timeupdate', function() {
+        if (audio.duration) {
+            const progress = (audio.currentTime / audio.duration) * 100;
+            document.getElementById('progressFill').style.width = progress + '%';
+            
+            document.getElementById('currentTime').textContent = formatTime(audio.currentTime);
+            document.getElementById('totalTime').textContent = formatTime(audio.duration);
+            
+            // 定期保存播放进度
+            if (Math.floor(audio.currentTime) % 5 === 0) {
+                savePlayerState();
+            }
+        }
+    });
+    
+    // 歌曲结束时播放下一首
+    audio.addEventListener('ended', function() {
+        nextSong();
+    });
+    
+    // 格式化时间
+    function formatTime(seconds) {
+        const mins = Math.floor(seconds / 60);
+        const secs = Math.floor(seconds % 60);
+        return mins + ':' + (secs < 10 ? '0' : '') + secs;
+    }
+    
+    // 页面加载时初始化
+    document.addEventListener('DOMContentLoaded', function() {
+        restorePlayerState();
+        loadSong(currentSongIndex);
+        
+        // 恢复播放状态
+        const savedState = JSON.parse(localStorage.getItem('musicPlayerState') || '{}');
+        if (savedState.isPlaying && savedState.currentTime > 0) {
+            // 延迟一点时间让页面完全加载
+            setTimeout(() => {
+                togglePlayPause();
+            }, 1000);
+        }
+    });
+    
+    // 页面卸载前保存状态
+    window.addEventListener('beforeunload', function() {
+        savePlayerState();
+    });
+    
+    // 定期保存状态
+    setInterval(savePlayerState, 10000); // 每10秒保存一次
+})();
+</script>
+
 {% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
 <div class="page__footer-follow">
   <ul class="social-icons">
