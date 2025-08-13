@@ -16,7 +16,7 @@ author_profile: true
   margin-bottom: 1.5em;
   padding: 1.2em;
   background: #fdfdfd;
-  border-left: 4px solid #667eea;
+  border-left: 4px solid #1B4F72;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   border-radius: 0 8px 8px 0;
 }
@@ -49,7 +49,7 @@ author_profile: true
 }
 
 .experience-title a:hover {
-  border-bottom: 1px solid #667eea;
+  border-bottom: 1px solid #1B4F72;
 }
 
 .experience-meta {
@@ -78,7 +78,7 @@ author_profile: true
 }
 
 .supervisor-info a {
-  color: #667eea;
+  color: #2E86AB;
   text-decoration: none;
   font-weight: 500;
 }
@@ -115,7 +115,7 @@ author_profile: true
   content: "▸";
   position: absolute;
   left: 0;
-  color: #667eea;
+  color: #1B4F72;
   font-weight: 600;
 }
 

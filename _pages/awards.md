@@ -34,14 +34,14 @@ author_profile: true
 }
 
 .award-organization {
-  color: #5b5d9aff;
+  color: #2E86AB;
   font-style: italic;
   text-align: center;
   font-size: 0.9em;
 }
 
 .award-date {
-  color: #624682ff;
+  color: #1B4F72;
   font-weight: 500;
   text-align: right;
   white-space: nowrap;

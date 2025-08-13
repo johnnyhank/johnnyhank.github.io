@@ -43,17 +43,17 @@ author_profile: true
 }
 
 .grade-score.excellent {
-  background-color: #667eea;
+  background-color: #1B4F72;
   color: white;
 }
 
 .grade-score.great {
-  background-color: #f093fb;
+  background-color: #2E86AB;
   color: white;
 }
 
 .grade-score.good {
-  background-color: #4facfe;
+  background-color: #A23B72;
   color: white;
 }
 
