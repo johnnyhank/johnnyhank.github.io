@@ -3,7 +3,7 @@
 <!-- 全局音乐播放器 -->
 <div id="globalMusicPlayer" class="music-player-container">
   <div class="music-player">
-    <div class="player-toggle" onclick="toggleMusicPlayer()">
+    <div class="player-toggle" id="musicToggleBtn">
       <i class="fas fa-music"></i>
     </div>
     <div class="player-controls" id="playerControls">
@@ -12,13 +12,13 @@
         <div class="song-artist" id="songArtist">点击选择</div>
       </div>
       <div class="control-buttons">
-        <button onclick="previousSong()" title="上一首"><i class="fas fa-step-backward"></i></button>
-        <button onclick="togglePlayPause()" id="playPauseBtn" title="播放/暂停"><i class="fas fa-play"></i></button>
-        <button onclick="nextSong()" title="下一首"><i class="fas fa-step-forward"></i></button>
+        <button id="prevBtn" title="上一首"><i class="fas fa-step-backward"></i></button>
+        <button id="playPauseBtn" title="播放/暂停"><i class="fas fa-play"></i></button>
+        <button id="nextBtn" title="下一首"><i class="fas fa-step-forward"></i></button>
       </div>
       <div class="volume-control">
         <i class="fas fa-volume-down"></i>
-        <input type="range" id="volumeSlider" min="0" max="100" value="30" onchange="setVolume(this.value)">
+        <input type="range" id="volumeSlider" min="0" max="100" value="30">
         <i class="fas fa-volume-up"></i>
       </div>
       <div class="progress-container">
@@ -304,8 +304,34 @@
         }
     }
     
+    // 上一首
+    function previousSong() {
+        currentSongIndex = (currentSongIndex - 1 + playlist.length) % playlist.length;
+        loadSong(currentSongIndex);
+        if (isPlaying) {
+            audio.play();
+        }
+        savePlayerState();
+    }
+    
+    // 下一首
+    function nextSong() {
+        currentSongIndex = (currentSongIndex + 1) % playlist.length;
+        loadSong(currentSongIndex);
+        if (isPlaying) {
+            audio.play();
+        }
+        savePlayerState();
+    }
+    
+    // 设置音量
+    function setVolume(value) {
+        audio.volume = value / 100;
+        savePlayerState();
+    }
+    
     // 播放/暂停切换
-    window.togglePlayPause = function() {
+    function togglePlayPause() {
         console.log('togglePlayPause called, isPlaying:', isPlaying);
         
         if (audio.src === '' || audio.src === window.location.href) {
@@ -333,46 +359,66 @@
             });
         }
         savePlayerState();
-    };
+    }
     
-    // 上一首
-    window.previousSong = function() {
-        currentSongIndex = (currentSongIndex - 1 + playlist.length) % playlist.length;
-        loadSong(currentSongIndex);
-        if (isPlaying) {
-            audio.play();
+    // 暴露给全局的函数（为了向后兼容）
+    window.togglePlayPause = togglePlayPause;
+    window.previousSong = previousSong; 
+    window.nextSong = nextSong;
+    window.setVolume = setVolume;
+    
+    // 初始化事件监听器
+    function initEventListeners() {
+        // 音乐播放器切换按钮
+        const toggleBtn = document.getElementById('musicToggleBtn');
+        if (toggleBtn) {
+            toggleBtn.addEventListener('click', function() {
+                console.log('Toggle button clicked');
+                const controls = document.getElementById('playerControls');
+                controls.classList.toggle('active');
+            });
         }
-        savePlayerState();
-    };
-    
-    // 下一首
-    window.nextSong = function() {
-        currentSongIndex = (currentSongIndex + 1) % playlist.length;
-        loadSong(currentSongIndex);
-        if (isPlaying) {
-            audio.play();
+        
+        // 播放/暂停按钮
+        const playPauseBtn = document.getElementById('playPauseBtn');
+        if (playPauseBtn) {
+            playPauseBtn.addEventListener('click', togglePlayPause);
         }
-        savePlayerState();
-    };
-    
-    // 设置音量
-    window.setVolume = function(value) {
-        audio.volume = value / 100;
-        savePlayerState();
-    };
-    
-    // 切换播放器显示
-    window.toggleMusicPlayer = function() {
-        const controls = document.getElementById('playerControls');
-        controls.classList.toggle('active');
-    };
+        
+        // 上一首按钮
+        const prevBtn = document.getElementById('prevBtn');
+        if (prevBtn) {
+            prevBtn.addEventListener('click', previousSong);
+        }
+        
+        // 下一首按钮
+        const nextBtn = document.getElementById('nextBtn');
+        if (nextBtn) {
+            nextBtn.addEventListener('click', nextSong);
+        }
+        
+        // 音量滑块
+        const volumeSlider = document.getElementById('volumeSlider');
+        if (volumeSlider) {
+            volumeSlider.addEventListener('input', function() {
+                setVolume(this.value);
+            });
+        }
+        
+        console.log('Event listeners initialized');
+    }
     
     // 进度条控制
-    document.getElementById('progressBar').addEventListener('click', function(e) {
-        const rect = this.getBoundingClientRect();
-        const pos = (e.clientX - rect.left) / rect.width;
-        audio.currentTime = pos * audio.duration;
-    });
+    function initProgressBar() {
+        const progressBar = document.getElementById('progressBar');
+        if (progressBar) {
+            progressBar.addEventListener('click', function(e) {
+                const rect = this.getBoundingClientRect();
+                const pos = (e.clientX - rect.left) / rect.width;
+                audio.currentTime = pos * audio.duration;
+            });
+        }
+    }
     
     // 更新进度条
     audio.addEventListener('timeupdate', function() {
@@ -404,6 +450,22 @@
     
     // 页面加载时初始化
     document.addEventListener('DOMContentLoaded', function() {
+        console.log('DOMContentLoaded - Initializing music player');
+        
+        // 确保audio元素存在
+        audio = document.getElementById('backgroundAudio');
+        if (!audio) {
+            console.error('Audio element not found!');
+            return;
+        }
+        
+        // 初始化事件监听器
+        initEventListeners();
+        
+        // 初始化进度条事件
+        initProgressBar();
+        
+        // 恢复播放状态和加载歌曲
         restorePlayerState();
         loadSong(currentSongIndex);
         
@@ -412,9 +474,12 @@
         if (savedState.isPlaying && savedState.currentTime > 0) {
             // 延迟一点时间让页面完全加载
             setTimeout(() => {
+                console.log('Auto-resuming playback');
                 togglePlayPause();
             }, 1000);
         }
+        
+        console.log('Music player initialized successfully');
     });
     
     // 页面卸载前保存状态
