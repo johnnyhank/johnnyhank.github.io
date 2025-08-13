@@ -23,6 +23,7 @@ author_profile: true
 
 .experience-header {
   margin-bottom: 0.6em;
+  margin-top: 0;
 }
 
 .experience-title {
@@ -30,7 +31,14 @@ author_profile: true
   font-weight: 600;
   color: #2c3e50;
   margin-bottom: 0.4em;
+  margin-top: 0;
   line-height: 1.3;
+}
+
+/* 重置h3标签的默认边距 */
+.experience-title h3 {
+  margin: 0;
+  padding: 0;
 }
 
 .experience-title a {
