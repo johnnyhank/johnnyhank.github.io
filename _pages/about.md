@@ -34,7 +34,7 @@ redirect_from:
 
 .quote-section {
   text-align: center;
-  margin: 1.5em 0 0.8em 0;
+  margin: 1em 0 0.5em 0;
   padding: 1.5em;
   background: #f8f9fa;
   border-left: 4px solid #6c757d;
@@ -43,13 +43,13 @@ redirect_from:
 }
 
 .quote-text {
-  font-size: 1.1em;
+  font-size: 0.8em;
   line-height: 1.6;
   margin-bottom: 0.8em;
 }
 
 .quote-author {
-  font-size: 0.9em;
+  font-size: 0.6em;
   color: #6c757d;
   font-weight: 600;
 }
