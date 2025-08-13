@@ -29,11 +29,11 @@ redirect_from:
 .intro-section {
   background: #fdfdfd;
   padding: 2em;
-  margin: 2em 0;
+  margin: 1em 0;
 }
 
 .intro-section p {
-  margin-bottom: 1.2em;
+  margin-bottom: 1em;
   text-align: justify;
 }
 
@@ -167,9 +167,8 @@ redirect_from:
 
 <p>I am very fortunate to be guided by <strong><a href="https://icisee.sjtu.edu.cn/jiaoshiml/sunshu.html">Assoc. Prof. Shu Sun</a></strong> of <a href="https://ee.sjtu.edu.cn/Show.aspx?infolb=94&infoid=346&flag=42">Institute of Wireless Communication Technology</a>, Shanghai Jiao Tong University. I am going to start my Ph.D. in the <span class="affiliation"><a href="https://icisee.sjtu.edu.cn/">School of Integrated Circuits</a></span>, <span class="affiliation"><a href="https://www.sjtu.edu.cn">Shanghai Jiao Tong University</a></span> in <strong>September 2026</strong>.</p>
 
-
-
-<div class="section-header">Research Interests</div>
+<!-- 
+<div class="section-header">Research Interests</div> -->
 
 <div class="research-section">
 <p class="research-description">My research interests lie in the field of <strong>physical layer technologies in wireless communications</strong>, including <em>OTFS Modulation, Channel Modeling and Multiple Access</em>. I am also keen to explore the <strong>integration of artificial intelligence and wireless communication technologies</strong>, particularly leveraging machine learning techniques to optimize resource allocation and improve adaptive strategies. My goal is to contribute my knowledge toward the digital and intelligent evolution of wireless communications in the 6G era.</p>
