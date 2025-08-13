@@ -9,12 +9,12 @@ author_profile: true
 <style>
 .experiences-container {
   max-width: 100%;
-  margin: 20px 0;
+  margin: 10px 0;
 }
 
 .experience-item {
-  margin-bottom: 2.5em;
-  padding: 1.8em;
+  margin-bottom: 2em;
+  padding: 1.5em;
   background: #fdfdfd;
   border-left: 4px solid #667eea;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -22,14 +22,14 @@ author_profile: true
 }
 
 .experience-header {
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
 }
 
 .experience-title {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 600;
   color: #2c3e50;
-  margin-bottom: 0.3em;
+  margin-bottom: 0.5em;
   line-height: 1.3;
 }
 
@@ -82,11 +82,11 @@ author_profile: true
 .experience-description {
   color: #495057;
   line-height: 1.6;
-  margin-top: 1em;
+  margin-top: 0.8em;
 }
 
 .experience-highlights {
-  margin-top: 1em;
+  margin-top: 0.8em;
 }
 
 .highlight-list {
@@ -98,7 +98,7 @@ author_profile: true
 .highlight-item {
   position: relative;
   padding-left: 1.5em;
-  margin-bottom: 0.8em;
+  margin-bottom: 0.6em;
   color: #495057;
   line-height: 1.5;
 }
