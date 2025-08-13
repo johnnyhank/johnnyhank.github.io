@@ -174,9 +174,9 @@ author_profile: true
     </div>
     <div class="experience-highlights">
       <ul class="highlight-list">
-        <li class="highlight-item">Conducted literature review on related research topics and reproduced several relevant GitHub projects.</li>
-        <li class="highlight-item">Proposed an innovative **hybrid precoder architecture with the relief of the constraint of the phase shifters** to optimize S(I)NR.</li>
-        <li class="highlight-item">Applied **(MA)DDPG** and **SAC** to design the MU-SISO nad MU-MISO hybrid precoder based on deep reinforcement learning.</li>
+        <li class="highlight-item">Conducted literature review on related research topics and reproduced several relevant **GitHub projects**.</li>
+        <li class="highlight-item">Proposed an innovative **hybrid precoder architecture** with the relief of the constraint of the **phase shifters** to optimize **S(I)NR**.</li>
+        <li class="highlight-item">Applied **(MA)DDPG** and **SAC** to design the **MU-SISO** and **MU-MISO** hybrid precoder based on **deep reinforcement learning**.</li>
       </ul>
     </div>
   </div>
@@ -184,7 +184,8 @@ author_profile: true
   <div class="experience-item">
     <div class="experience-header">
       <h3 class="experience-title">
-        <a href="https://github.com/johnnyhank/MIRA-Multimodal-Intelligent-Robotic-Assistant">Multimodal Intelligent Robotic Assistant</h3>
+        <a href="https://github.com/johnnyhank/MIRA-Multimodal-Intelligent-Robotic-Assistant">Multimodal Intelligent Robotic Assistant</a>
+      </h3>
       <div class="experience-meta">
         <div class="meta-item">
           <span class="meta-icon">📅</span>
@@ -201,9 +202,9 @@ author_profile: true
     </div>
     <div class="experience-highlights">
       <ul class="highlight-list">
-        <li class="highlight-item">Built a Gradio interface for voice, text, and image input with speech output, context memory, and device control (robotic arm & Micro:bit).</li>
-        <li class="highlight-item">Used Qwen-Plus to understand instructions and trigger actions like weather queries, DB operations, robot control, and image understanding via Qwen-VL.</li>
-        <li class="highlight-item">Implemented Function Calling and MCP in Qwen Agent for tool integration.</li>
+        <li class="highlight-item">Built a **Gradio interface** for voice, text, and image input with speech output, context memory, and device control (**robotic arm** & **Micro:bit**).</li>
+        <li class="highlight-item">Used **Qwen-Plus** to understand instructions and trigger actions like weather queries, **DB operations**, robot control, and image understanding via **Qwen-VL**.</li>
+        <li class="highlight-item">Implemented **Function Calling** and **MCP** in **Qwen Agent** for tool integration.</li>
       </ul>
     </div>
   </div>
@@ -229,8 +230,8 @@ author_profile: true
     </div>
     <div class="experience-highlights">
       <ul class="highlight-list">
-        <li class="highlight-item">Developed a sensor network and processed fatigue-related data using RPi and ESP32 with MQTT for data transmission.</li>
-        <li class="highlight-item">Built a website for data visualization and video monitoring with WebSocket and MJPG-Streamer.</li>
+        <li class="highlight-item">Developed a **sensor network** and processed fatigue-related data using **RPi** and **ESP32** with **MQTT** for data transmission.</li>
+        <li class="highlight-item">Built a website for **data visualization** and **video monitoring** with **WebSocket** and **MJPG-Streamer**.</li>
       </ul>
     </div>
   </div>
