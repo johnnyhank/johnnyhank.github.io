@@ -33,15 +33,22 @@ redirect_from:
 }
 
 .quote-text {
-  font-size: 0.9em;
-  line-height: 1.6;
-  margin-bottom: 0.5em;
+  font-size: 1.05em;
+  line-height: 1.7;
+  margin-bottom: 0.8em;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  color: #2c3e50;
 }
 
 .quote-author {
-  font-size: 0.7em;
+  font-size: 0.8em;
   color: #6c757d;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .intro-section p {
@@ -113,11 +120,12 @@ redirect_from:
   }
   
   .quote-text {
-    font-size: 0.85em;
+    font-size: 0.95em;
+    line-height: 1.6;
   }
   
   .quote-author {
-    font-size: 0.65em;
+    font-size: 0.7em;
   }
 }
 
