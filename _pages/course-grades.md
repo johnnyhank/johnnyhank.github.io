@@ -26,7 +26,7 @@ author_profile: true
 }
 
 .course-name {
-  font-weight: 550;
+  font-weight: 500;
   color: #2c3e50;
   font-size: 0.95em;
   line-height: 1.3;
