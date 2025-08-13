@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Lihan Zheng / Personal Homepage"
+title                    : "Personal Homepage"
 title_separator          : "-"
 name                     : &name "Lihan Zheng"
 description              : &description "a third year undergraduate student from Shanghai Jiao Tong University"
@@ -45,7 +45,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : #"academicpages"
+  github           : "https://github.com/johnnyhank"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 

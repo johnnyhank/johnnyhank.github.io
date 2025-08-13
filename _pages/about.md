@@ -19,7 +19,7 @@ redirect_from:
   font-size: 1.3em;
   font-weight: 700;
   color: #1a252f;
-  margin: 2.5em 0 1.2em 0;
+  margin: 2.5em 0 0.8em 0;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   /* border-bottom: 1px solid #34495e; */
@@ -54,7 +54,7 @@ redirect_from:
 }
 
 .research-section {
-  margin: 2.5em 0;
+  margin: 1.5em 0;
 }
 
 .research-description {
@@ -177,12 +177,14 @@ redirect_from:
 
 <div class="cv-note">For detailed academic background and research experience, please refer to my <a href="../_pages/Lihan_Zheng_PhD_Application_CV.pdf">Curriculum Vitae</a>.</div>
 
-<div class="contact-section">
+<!-- <div class="contact-section">
 <a href="mailto:zhenglihan@sjtu.edu.cn">Email</a>
 <a href="https://github.com/johnnyhank">GitHub</a>
 <a href="https://blog.csdn.net/weixin_73831908?spm=1000.2115.3001.5343">Blog</a>
+</div> -->
 </div>
-</div>
+
+
 <!--
 A data-driven personal website
 ======
