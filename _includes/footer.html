@@ -220,17 +220,17 @@
         {
             title: "River Flows in You",
             artist: "Yiruma",
-            src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" // 示例音频，请替换
+            src: "https://actions.google.com/sounds/v1/ambiences/medium_rain_on_leaves.ogg" // 暂时使用Google的示例音频
         },
         {
-            title: "Canon in D",
-            artist: "Pachelbel",
-            src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" // 示例音频，请替换
+            title: "Peaceful Piano",
+            artist: "Classical",
+            src: "https://actions.google.com/sounds/v1/ambiences/forest_sounds.ogg" // 暂时使用Google的示例音频
         },
         {
-            title: "Gymnopédie No.1",
-            artist: "Erik Satie", 
-            src: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" // 示例音频，请替换
+            title: "Meditation Music",
+            artist: "Relaxing",
+            src: "https://actions.google.com/sounds/v1/ambiences/restaurant.ogg" // 暂时使用Google的示例音频
         }
     ];
     
@@ -266,18 +266,39 @@
     
     // 加载歌曲
     function loadSong(index) {
-        if (index < 0 || index >= playlist.length) return;
+        console.log('loadSong called with index:', index);
+        if (index < 0 || index >= playlist.length) {
+            console.error('Invalid song index:', index);
+            return;
+        }
         
         const song = playlist[index];
+        console.log('Loading song:', song);
         audio.src = song.src;
         document.getElementById('songTitle').textContent = song.title;
         document.getElementById('songArtist').textContent = song.artist;
+        
+        // 添加音频加载事件监听
+        audio.addEventListener('loadstart', function() {
+            console.log('Audio loading started');
+        });
+        
+        audio.addEventListener('canplay', function() {
+            console.log('Audio can play');
+        });
+        
+        audio.addEventListener('error', function(e) {
+            console.error('Audio loading error:', e);
+            document.getElementById('songTitle').textContent = '加载失败';
+            document.getElementById('songArtist').textContent = '无法加载音频文件';
+        });
         
         // 恢复播放时间
         const savedState = JSON.parse(localStorage.getItem('musicPlayerState') || '{}');
         if (savedState.currentTime && index === savedState.currentSong) {
             audio.addEventListener('canplay', function setTime() {
                 audio.currentTime = savedState.currentTime;
+                console.log('Restored playback time:', savedState.currentTime);
                 audio.removeEventListener('canplay', setTime);
             });
         }
@@ -285,7 +306,10 @@
     
     // 播放/暂停切换
     window.togglePlayPause = function() {
-        if (audio.src === '') {
+        console.log('togglePlayPause called, isPlaying:', isPlaying);
+        
+        if (audio.src === '' || audio.src === window.location.href) {
+            console.log('Loading song:', currentSongIndex);
             loadSong(currentSongIndex);
         }
         
@@ -293,14 +317,19 @@
             audio.pause();
             document.getElementById('playPauseBtn').innerHTML = '<i class="fas fa-play"></i>';
             isPlaying = false;
+            console.log('Audio paused');
         } else {
+            console.log('Attempting to play audio, src:', audio.src);
             audio.play().then(() => {
                 document.getElementById('playPauseBtn').innerHTML = '<i class="fas fa-pause"></i>';
                 isPlaying = true;
+                console.log('Audio playing successfully');
             }).catch(e => {
-                console.log('播放失败:', e);
-                // 如果自动播放被阻止，显示提示
-                alert('请手动点击播放按钮启动音乐');
+                console.error('播放失败:', e);
+                // 更友好的错误提示
+                document.getElementById('songTitle').textContent = '播放失败';
+                document.getElementById('songArtist').textContent = '请检查网络连接或音频文件';
+                alert('音频播放失败，可能的原因：\n1. 网络连接问题\n2. 音频文件不存在\n3. 浏览器阻止了自动播放\n\n请刷新页面后重试，或手动点击播放按钮。');
             });
         }
         savePlayerState();
