@@ -22,16 +22,14 @@ redirect_from:
   margin: 2.5em 0 1.2em 0;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  border-bottom: 1px solid #34495e;
-  padding-bottom: 0.5em;
+  /* border-bottom: 1px solid #34495e; */
+  /* padding-bottom: 0.5em; */
 }
 
 .intro-section {
   background: #fdfdfd;
   padding: 2em;
-  border-left: 3px solid #34495e;
   margin: 2em 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .intro-section p {

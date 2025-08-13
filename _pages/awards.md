@@ -41,7 +41,7 @@ author_profile: true
 }
 
 .award-date {
-  color: #8c3ce7ff;
+  color: #624682ff;
   font-weight: 500;
   text-align: right;
   white-space: nowrap;
