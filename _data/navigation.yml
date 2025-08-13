@@ -29,7 +29,7 @@ main:
     url: /awards/
   - title: "Course Grades"  
     url: /course-grades/
-  - title:"Life & Interests"
+  - title: "Life & Interests"
     url: /life/
   # - title: "Guide"
   #   url: /markdown/
