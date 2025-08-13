@@ -10,16 +10,15 @@ author_profile: true
 <style>
 .grades-container {
   max-width: 100%;
-  margin: 20px 0;
+  margin: 15px 0;
 }
 
 .grade-item {
-  display: grid;
-  grid-template-columns: 4fr 1fr;
-  gap: 20px;
-  padding: 15px 0;
-  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
 }
 
 .grade-item:last-child {
@@ -29,55 +28,43 @@ author_profile: true
 .course-name {
   font-weight: 500;
   color: #2c3e50;
-  text-align: left;
-  font-size: 1em;
-  line-height: 1.4;
+  font-size: 0.95em;
+  line-height: 1.3;
+  flex: 1;
 }
 
 .grade-score {
-  color: #2c3e50;
-  font-weight: 700;
-  text-align: right;
-  font-size: 1.1em;
-  padding: 8px 16px;
-  background-color: #f8f9fa;
-  border-radius: 20px;
-  border: 2px solid transparent;
+  font-weight: 600;
+  text-align: center;
+  font-size: 0.9em;
+  padding: 4px 12px;
+  border-radius: 15px;
+  min-width: 40px;
 }
 
 .grade-score.excellent {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-color: #667eea;
   color: white;
-  border-color: #667eea;
 }
 
 .grade-score.great {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  background-color: #f093fb;
   color: white;
-  border-color: #f093fb;
 }
 
 .grade-score.good {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  background-color: #4facfe;
   color: white;
-  border-color: #4facfe;
 }
 
 @media (max-width: 768px) {
-  .grade-item {
-    grid-template-columns: 1fr;
-    gap: 12px;
-    text-align: left;
+  .course-name {
+    font-size: 0.9em;
   }
   
   .grade-score {
-    text-align: center;
-    margin: 0 auto;
-    max-width: 80px;
-  }
-  
-  .course-name {
-    font-size: 0.9em;
+    font-size: 0.85em;
+    padding: 3px 10px;
   }
 }
 </style>
