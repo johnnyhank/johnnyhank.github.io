@@ -9,12 +9,12 @@ author_profile: true
 <style>
 .experiences-container {
   max-width: 100%;
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
 .experience-item {
-  margin-bottom: 2em;
-  padding: 1.5em;
+  margin-bottom: 1.5em;
+  padding: 1.2em;
   background: #fdfdfd;
   border-left: 4px solid #667eea;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -22,14 +22,14 @@ author_profile: true
 }
 
 .experience-header {
-  margin-bottom: 0.8em;
+  margin-bottom: 0.6em;
 }
 
 .experience-title {
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: 600;
   color: #2c3e50;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.4em;
   line-height: 1.3;
 }
 
@@ -82,11 +82,11 @@ author_profile: true
 .experience-description {
   color: #495057;
   line-height: 1.6;
-  margin-top: 0.8em;
+  margin-top: 0.6em;
 }
 
 .experience-highlights {
-  margin-top: 0.8em;
+  margin-top: 0.6em;
 }
 
 .highlight-list {
@@ -98,7 +98,7 @@ author_profile: true
 .highlight-item {
   position: relative;
   padding-left: 1.5em;
-  margin-bottom: 0.6em;
+  margin-bottom: 0.4em;
   color: #495057;
   line-height: 1.5;
 }
@@ -151,7 +151,7 @@ author_profile: true
       </div>
     </div>
     <div class="experience-description">
-      Conducting theoretical study and simulation-based research on **Orthogonal Time Frequency Space (OTFS) modulation** in the delay-Doppler domain for high-mobility wireless communications.
+      Conducting theoretical study and simulation-based research on <strong>Orthogonal Time Frequency Space (OTFS) modulation</strong> in the <strong>delay-Doppler domain</strong> for <strong>high-mobility wireless communications</strong>.
     </div>
   </div>
 
@@ -174,9 +174,9 @@ author_profile: true
     </div>
     <div class="experience-highlights">
       <ul class="highlight-list">
-        <li class="highlight-item">Conducted literature review on related research topics and reproduced several relevant **GitHub projects**.</li>
-        <li class="highlight-item">Proposed an innovative **hybrid precoder architecture** with the relief of the constraint of the **phase shifters** to optimize **S(I)NR**.</li>
-        <li class="highlight-item">Applied **(MA)DDPG** and **SAC** to design the **MU-SISO** and **MU-MISO** hybrid precoder based on **deep reinforcement learning**.</li>
+        <li class="highlight-item">Conducted literature review on related research topics and reproduced several relevant <strong>GitHub projects</strong>.</li>
+        <li class="highlight-item">Proposed an innovative <strong>hybrid precoder architecture</strong> with the relief of the constraint of the <strong>phase shifters</strong> to optimize <strong>S(I)NR</strong>.</li>
+        <li class="highlight-item">Applied <strong>(MA)DDPG</strong> and <strong>SAC</strong> to design the <strong>MU-SISO</strong> and <strong>MU-MISO</strong> hybrid precoder based on <strong>deep reinforcement learning</strong>.</li>
       </ul>
     </div>
   </div>
@@ -202,9 +202,9 @@ author_profile: true
     </div>
     <div class="experience-highlights">
       <ul class="highlight-list">
-        <li class="highlight-item">Built a **Gradio interface** for voice, text, and image input with speech output, context memory, and device control (**robotic arm** & **Micro:bit**).</li>
-        <li class="highlight-item">Used **Qwen-Plus** to understand instructions and trigger actions like weather queries, **DB operations**, robot control, and image understanding via **Qwen-VL**.</li>
-        <li class="highlight-item">Implemented **Function Calling** and **MCP** in **Qwen Agent** for tool integration.</li>
+        <li class="highlight-item">Built a <strong>Gradio interface</strong> for voice, text, and image input with speech output, context memory, and device control (<strong>robotic arm</strong> & <strong>Micro:bit</strong>).</li>
+        <li class="highlight-item">Used <strong>Qwen-Plus</strong> to understand instructions and trigger actions like weather queries, <strong>DB operations</strong>, robot control, and image understanding via <strong>Qwen-VL</strong>.</li>
+        <li class="highlight-item">Implemented <strong>Function Calling</strong> and <strong>MCP</strong> in <strong>Qwen Agent</strong> for tool integration.</li>
       </ul>
     </div>
   </div>
@@ -230,8 +230,8 @@ author_profile: true
     </div>
     <div class="experience-highlights">
       <ul class="highlight-list">
-        <li class="highlight-item">Developed a **sensor network** and processed fatigue-related data using **RPi** and **ESP32** with **MQTT** for data transmission.</li>
-        <li class="highlight-item">Built a website for **data visualization** and **video monitoring** with **WebSocket** and **MJPG-Streamer**.</li>
+        <li class="highlight-item">Developed a <strong>sensor network</strong> and processed fatigue-related data using <strong>RPi</strong> and <strong>ESP32</strong> with <strong>MQTT</strong> for data transmission.</li>
+        <li class="highlight-item">Built a website for <strong>data visualization</strong> and <strong>video monitoring</strong> with <strong>WebSocket</strong> and <strong>MJPG-Streamer</strong>.</li>
       </ul>
     </div>
   </div>
