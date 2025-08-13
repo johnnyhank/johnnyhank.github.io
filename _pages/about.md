@@ -13,6 +13,7 @@ redirect_from:
   line-height: 1.8;
   color: #2c3e50;
   font-size: 1.05em;
+  margin-bottom: 1em;
 }
 
 .intro-section {
@@ -76,8 +77,8 @@ redirect_from:
 }
 
 .cv-note {
-  margin-top: 1.5em;
-  padding: 1em 0;
+  margin: 1.5em 0 0 0;
+  padding: 1em 0 0.5em 0;
   border-top: 1px solid #e9ecef;
   font-style: italic;
   color: #6c757d;
@@ -119,6 +120,38 @@ redirect_from:
     font-size: 0.65em;
   }
 }
+
+/* 控制页面底部空白 */
+body {
+  min-height: auto !important;
+}
+
+.page {
+  min-height: auto !important;
+}
+
+.archive {
+  min-height: auto !important;
+  padding-bottom: 2em !important;
+}
+
+/* 额外的布局控制 */
+.page__content {
+  padding-bottom: 2em !important;
+}
+
+.initial-content {
+  min-height: auto !important;
+}
+
+#main {
+  min-height: auto !important;
+}
+
+/* 如果有footer，确保它紧跟内容 */
+.page__footer {
+  margin-top: 2em !important;
+}
 </style>
 
 <div class="academic-profile">
@@ -139,3 +172,41 @@ redirect_from:
 
 <div class="cv-note">For detailed academic background and research experience, please refer to my <a href="../_pages/Lihan_Zheng_PhD_Application_CV.pdf">Curriculum Vitae</a>.</div>
 </div>
+
+<script>
+// 动态调整页面高度，消除底部空白
+(function() {
+    function adjustPageHeight() {
+        // 获取页面内容的实际高度
+        var content = document.querySelector('.academic-profile') || document.querySelector('.page__content') || document.body;
+        var actualHeight = content.scrollHeight;
+        
+        // 找到可能导致额外高度的元素
+        var elements = ['body', 'html', '.page', '.archive', '#main', '.initial-content', '.page__content'];
+        
+        elements.forEach(function(selector) {
+            var element = document.querySelector(selector);
+            if (element) {
+                element.style.minHeight = 'auto';
+                element.style.height = 'auto';
+            }
+        });
+        
+        // 如果页面仍然太高，强制设置body高度
+        if (window.innerHeight > actualHeight + 100) {
+            document.body.style.height = (actualHeight + 100) + 'px';
+            document.documentElement.style.height = (actualHeight + 100) + 'px';
+        }
+    }
+    
+    // 页面加载完成后调整
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', adjustPageHeight);
+    } else {
+        adjustPageHeight();
+    }
+    
+    // 窗口大小改变时重新调整
+    window.addEventListener('resize', adjustPageHeight);
+})();
+</script>
