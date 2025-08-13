@@ -4,6 +4,8 @@ permalink: /life/
 author_profile: true
 ---
 
+{% include base_path %}
+
 Life is not just about academic pursuits and professional achievements—it's about the experiences, passions, and hobbies that shape who we are. Here's a glimpse into the activities and interests that bring joy and balance to my life.
 
 ## 🏃‍♂️ Sports & Fitness
