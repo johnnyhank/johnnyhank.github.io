@@ -173,20 +173,16 @@ redirect_from:
 
 <div class="research-section">
 <p class="research-description">My research interests lie in the field of <strong>physical layer technologies in wireless communications</strong>, including <em>OTFS Modulation, Channel Modeling and Multiple Access</em>. I am also keen to explore the <strong>integration of artificial intelligence and wireless communication technologies</strong>, particularly leveraging machine learning techniques to optimize resource allocation and improve adaptive strategies. My goal is to contribute my knowledge toward the digital and intelligent evolution of wireless communications in the 6G era.</p>
+</div>
 
 <div class="cv-note">For detailed academic background and research experience, please refer to my <a href="../_pages/Lihan_Zheng_PhD_Application_CV.pdf">Curriculum Vitae</a>.</div>
-</div>
 
 <div class="contact-section">
 <a href="mailto:zhenglihan@sjtu.edu.cn">Email</a>
 <a href="https://github.com/johnnyhank">GitHub</a>
 <a href="https://blog.csdn.net/weixin_73831908?spm=1000.2115.3001.5343">Blog</a>
 </div>
-
 </div>
-
----
-
 <!--
 A data-driven personal website
 ======
