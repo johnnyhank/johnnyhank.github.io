@@ -121,36 +121,75 @@ redirect_from:
   }
 }
 
-/* 控制页面底部空白 */
-body {
+/* 彻底控制页面底部空白 */
+html, body {
+  height: auto !important;
   min-height: auto !important;
+  max-height: none !important;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .page {
   min-height: auto !important;
+  height: auto !important;
 }
 
 .archive {
   min-height: auto !important;
+  height: auto !important;
   padding-bottom: 2em !important;
 }
 
-/* 额外的布局控制 */
 .page__content {
   padding-bottom: 2em !important;
+  min-height: auto !important;
+  height: auto !important;
 }
 
 .initial-content {
   min-height: auto !important;
+  height: auto !important;
 }
 
 #main {
   min-height: auto !important;
+  height: auto !important;
+}
+
+.wrapper {
+  min-height: auto !important;
+  height: auto !important;
+}
+
+.layout--single {
+  min-height: auto !important;
+  height: auto !important;
+}
+
+/* 强制页面容器紧贴内容 */
+.page__wrapper {
+  min-height: auto !important;
+  height: auto !important;
 }
 
 /* 如果有footer，确保它紧跟内容 */
 .page__footer {
   margin-top: 2em !important;
+  position: relative !important;
+}
+
+/* 移除可能的全局最小高度设置 */
+* {
+  min-height: auto !important;
+}
+
+*:not(.academic-profile):not(.intro-section):not(.quote-section):not(.research-section):not(.cv-note) {
+  min-height: auto !important;
 }
 </style>
 
@@ -174,39 +213,77 @@ body {
 </div>
 
 <script>
-// 动态调整页面高度，消除底部空白
+// 彻底消除页面底部空白的强化解决方案
 (function() {
-    function adjustPageHeight() {
-        // 获取页面内容的实际高度
-        var content = document.querySelector('.academic-profile') || document.querySelector('.page__content') || document.body;
-        var actualHeight = content.scrollHeight;
-        
-        // 找到可能导致额外高度的元素
-        var elements = ['body', 'html', '.page', '.archive', '#main', '.initial-content', '.page__content'];
-        
-        elements.forEach(function(selector) {
-            var element = document.querySelector(selector);
-            if (element) {
-                element.style.minHeight = 'auto';
-                element.style.height = 'auto';
+    function forceRemoveBottomSpace() {
+        // 等待页面完全加载
+        setTimeout(function() {
+            // 获取实际内容高度
+            var mainContent = document.querySelector('.academic-profile') || 
+                             document.querySelector('.page__content') || 
+                             document.querySelector('#main') ||
+                             document.body;
+                             
+            if (mainContent) {
+                var contentHeight = mainContent.offsetHeight;
+                var windowHeight = window.innerHeight;
+                
+                // 强制设置所有可能影响高度的元素
+                var selectors = [
+                    'html', 'body', '.page', '.archive', '#main', 
+                    '.initial-content', '.page__content', '.wrapper',
+                    '.layout--single', '.page__wrapper', '.masthead',
+                    '.page__hero', '.page__hero--overlay'
+                ];
+                
+                selectors.forEach(function(selector) {
+                    var elements = document.querySelectorAll(selector);
+                    elements.forEach(function(element) {
+                        if (element) {
+                            element.style.setProperty('height', 'auto', 'important');
+                            element.style.setProperty('min-height', 'auto', 'important');
+                            element.style.setProperty('max-height', 'none', 'important');
+                        }
+                    });
+                });
+                
+                // 特别处理 body 和 html
+                document.body.style.setProperty('margin', '0', 'important');
+                document.body.style.setProperty('padding', '0', 'important');
+                document.documentElement.style.setProperty('height', 'auto', 'important');
+                document.documentElement.style.setProperty('min-height', 'auto', 'important');
+                
+                // 如果内容高度远小于窗口高度，强制调整
+                if (windowHeight - contentHeight > 200) {
+                    document.body.style.setProperty('height', (contentHeight + 100) + 'px', 'important');
+                    document.documentElement.style.setProperty('height', (contentHeight + 100) + 'px', 'important');
+                }
+                
+                // 移除任何可能的固定高度样式
+                var allElements = document.querySelectorAll('*');
+                for (var i = 0; i < allElements.length; i++) {
+                    var element = allElements[i];
+                    var computedStyle = window.getComputedStyle(element);
+                    if (computedStyle.minHeight && computedStyle.minHeight.indexOf('vh') > -1) {
+                        element.style.setProperty('min-height', 'auto', 'important');
+                    }
+                }
             }
-        });
-        
-        // 如果页面仍然太高，强制设置body高度
-        if (window.innerHeight > actualHeight + 100) {
-            document.body.style.height = (actualHeight + 100) + 'px';
-            document.documentElement.style.height = (actualHeight + 100) + 'px';
-        }
+        }, 100);
     }
     
-    // 页面加载完成后调整
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', adjustPageHeight);
-    } else {
-        adjustPageHeight();
-    }
+    // 多次执行以确保生效
+    document.addEventListener('DOMContentLoaded', forceRemoveBottomSpace);
+    window.addEventListener('load', forceRemoveBottomSpace);
+    
+    // 延迟执行，确保所有脚本都加载完毕
+    setTimeout(forceRemoveBottomSpace, 500);
+    setTimeout(forceRemoveBottomSpace, 1000);
+    setTimeout(forceRemoveBottomSpace, 2000);
     
     // 窗口大小改变时重新调整
-    window.addEventListener('resize', adjustPageHeight);
+    window.addEventListener('resize', function() {
+        setTimeout(forceRemoveBottomSpace, 100);
+    });
 })();
 </script>
