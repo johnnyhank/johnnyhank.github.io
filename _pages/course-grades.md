@@ -117,7 +117,7 @@ author_profile: true
 
   <div class="grade-item">
     <div class="course-name">Principles Wireless Communication and Mobile Networks</div>
-    <div class="grade-score great">94</div>
+    <div class="grade-score good">94</div>
   </div>
 
   <div class="grade-item">
