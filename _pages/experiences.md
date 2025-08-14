@@ -215,6 +215,12 @@ author_profile: true
         <li class="highlight-item">Implemented <strong>Function Calling</strong> and <strong>MCP</strong> in <strong>Qwen Agent</strong> for tool integration.</li>
       </ul>
     </div>
+    <div class="experience-highlights">
+      <h4 style="color: #1B4F72; font-size: 0.95em; margin: 0.8em 0 0.4em 0; font-weight: 600;">🏆 Honors & Awards</h4>
+      <ul class="highlight-list">
+        <li class="highlight-item">First Prize(only one) of the OrangePi Campus Development Competition</li>
+      </ul>
+    </div>
   </div>
 
   <div class="experience-item">
@@ -240,6 +246,13 @@ author_profile: true
       <ul class="highlight-list">
         <li class="highlight-item">Developed a <strong>sensor network</strong> and processed fatigue-related data using <strong>RPi</strong> and <strong>ESP32</strong> with <strong>MQTT</strong> for data transmission.</li>
         <li class="highlight-item">Built a website for <strong>data visualization</strong> and <strong>video monitoring</strong> with <strong>WebSocket</strong> and <strong>MJPG-Streamer</strong>.</li>
+      </ul>
+    </div>
+    <div class="experience-highlights">
+      <h4 style="color: #1B4F72; font-size: 0.95em; margin: 0.8em 0 0.4em 0; font-weight: 600;">🏆 Honors & Awards</h4>
+      <ul class="highlight-list">
+        <li class="highlight-item">Third Prize(3rd in 12 groups) of the AIoT Group Project</li>
+        <li class="highlight-item">A+ Performance in the AIoT Course</li>
       </ul>
     </div>
   </div>
