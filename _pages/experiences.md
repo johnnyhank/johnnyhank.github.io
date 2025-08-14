@@ -252,7 +252,7 @@ author_profile: true
       <h4 style="color: #1B4F72; font-size: 0.95em; margin: 0.8em 0 0.4em 0; font-weight: 600;">🏆 Honors & Awards</h4>
       <ul class="highlight-list">
         <li class="highlight-item">Third Prize(3rd in 12 groups) of the AIoT Group Project</li>
-        <li class="highlight-item">A+ Performance in the AIoT Course</li>
+        <li class="highlight-item">Personal A+ Performance in the AIoT Course</li>
       </ul>
     </div>
   </div>
