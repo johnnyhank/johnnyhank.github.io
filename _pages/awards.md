@@ -27,7 +27,7 @@ author_profile: true
 }
 
 .award-name {
-  font-weight: 600;
+  font-weight: 500;
   color: #2c3e50;
   text-align: left;
   font-size: 0.9em;
