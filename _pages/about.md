@@ -19,13 +19,13 @@ redirect_from:
 .intro-section {
   background: #fdfdfd;
   padding: 2em;
-  margin: 0.5em 0 1em 0;
+  margin: 0.5em 0 0 0;
 }
 
 .quote-section {
   text-align: center;
-  margin: 1em 0 0.5em 0;
-  padding: 1.5em;
+  margin: 0.5em 0 0.5em 0;
+  padding: 1em;
   background: #f8f9fa;
   border-left: 4px solid #6c757d;
   font-style: italic;
