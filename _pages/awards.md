@@ -30,22 +30,22 @@ author_profile: true
   font-weight: 500;
   color: #000000;
   text-align: left;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .award-organization {
   color: #000000;
   font-style: italic;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 .award-date {
   color: #000000;
-  font-weight: 500;
+  font-weight: 400;
   text-align: right;
   white-space: nowrap;
-  font-size: 0.9em;
+  font-size: 1em;
 }
 
 @media (max-width: 768px) {
