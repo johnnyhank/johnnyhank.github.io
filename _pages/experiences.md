@@ -153,7 +153,7 @@ author_profile: true
         </div>
       </div>
       <div class="supervisor-info">
-        Supervisor: <a href="https://ee.sjtu.edu.cn/FacultyDetail.aspx?id=212&infoid=66&flag=66">Assoc. Prof. Shu Sun</a>
+        Supervisor: Assoc. Prof. <a href="https://ee.sjtu.edu.cn/FacultyDetail.aspx?id=212&infoid=66&flag=66">Shu Sun</a>
       </div>
     </div>
     <div class="experience-description">
