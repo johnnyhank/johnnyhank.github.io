@@ -105,6 +105,11 @@
     margin-top: -1.5em;
     padding-left: 1.25rem;
   }
+
+  /* Avoid extra space after the final content block */
+  > :last-child {
+    margin-bottom: 0;
+  }
 }
 
 .page__hero {
