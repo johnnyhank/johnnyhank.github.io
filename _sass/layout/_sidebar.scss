@@ -264,8 +264,12 @@
   }
 
   .social-icon-img {
-    width: 1em;
-    height: 1em;
+    width: 1em !important; /* override .sidebar img { width: 100%; } */
+    height: 1em !important;
+    max-width: 1em;
+    max-height: 1em;
+    display: inline-block;
     vertical-align: -0.125em;
+    object-fit: contain;
   }
 }

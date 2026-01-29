@@ -75,7 +75,7 @@ author:
   youtube          : # Username
   zhihu            : # Username
   wechat           : ./images/wechat-qrcode.jpg  # QR code image for WeChat placed in /images/ folder
-  xiaohongshu      : m/AlRe99FtkDT
+  xiaohongshu      : https://xhslink.com/m/AlRe99FtkDT
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
