@@ -26,17 +26,17 @@ author_profile: true
 }
 
 .course-name {
-  font-weight: 500;
+  font-weight: 400;
   color: #2c3e50;
-  font-size: 0.95em;
+  font-size: 1em;
   line-height: 1.3;
   flex: 1;
 }
 
 .grade-score {
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
-  font-size: 0.9em;
+  font-size: 1em;
   padding: 4px 12px;
   border-radius: 15px;
   min-width: 40px;
