@@ -11,6 +11,7 @@ body {
   background-color: var(--global-bg-color);
 
   margin: 0;
+  margin-bottom: 0 !important; /* override sticky-footer JS */
   padding: $masthead-height 0 0;
   padding-bottom: 0;
   font-family: $global-font-family;

@@ -129,76 +129,6 @@ redirect_from:
   }
 }
 
-/* 彻底控制页面底部空白 */
-html, body {
-  height: auto !important;
-  min-height: auto !important;
-  max-height: none !important;
-  overflow-x: hidden;
-}
-
-body {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.page {
-  min-height: auto !important;
-  height: auto !important;
-}
-
-.archive {
-  min-height: auto !important;
-  height: auto !important;
-  padding-bottom: 2em !important;
-}
-
-.page__content {
-  padding-bottom: 2em !important;
-  min-height: auto !important;
-  height: auto !important;
-}
-
-.initial-content {
-  min-height: auto !important;
-  height: auto !important;
-}
-
-#main {
-  min-height: auto !important;
-  height: auto !important;
-}
-
-.wrapper {
-  min-height: auto !important;
-  height: auto !important;
-}
-
-.layout--single {
-  min-height: auto !important;
-  height: auto !important;
-}
-
-/* 强制页面容器紧贴内容 */
-.page__wrapper {
-  min-height: auto !important;
-  height: auto !important;
-}
-
-/* 如果有footer，确保它紧跟内容 */
-.page__footer {
-  margin-top: 2em !important;
-  position: relative !important;
-}
-
-/* 移除可能的全局最小高度设置 */
-* {
-  min-height: auto !important;
-}
-
-*:not(.academic-profile):not(.intro-section):not(.quote-section):not(.research-section):not(.cv-note) {
-  min-height: auto !important;
-}
 </style>
 
 <div class="academic-profile">
@@ -209,7 +139,7 @@ body {
 </div>
 
 <div class="intro-section">
-<p>I am a fourth-year undergraduate student at the <span class="affiliation"><a href="https://icisee.sjtu.edu.cn/">School of Integrated Circuits (School of Information Science and Electronic Engineering)</a></span>, <span class="affiliation"><a href="https://www.sjtu.edu.cn">Shanghai Jiao Tong University</a></span>，and will begin my Ph.D. program there in September 2026.
+<p>I am a fourth-year undergraduate student at the <span class="affiliation"><a href="https://icisee.sjtu.edu.cn/">School of Integrated Circuits (School of Information Science and Electronic Engineering)</a></span>, <span class="affiliation"><a href="https://www.sjtu.edu.cn">Shanghai Jiao Tong University</a></span>, and will begin my Ph.D. program there in September 2026.</p>
 
 <div class="research-section">
 <p class="research-description">My research is supervised by <span class="affiliation"><a href="https://icisee.sjtu.edu.cn/jiaoshiml/sunshu.html">Associate Professor Shu Sun</a></span> at the Institute of Wireless Communication Technology, Shanghai Jiao Tong University. My research interests focus on <em>physical layer technologies in wireless communications</em>, including <em>OTFS modulation, channel modeling and multiple access</em>. I am also keen to explore the integration of artificial intelligence and wireless communication technologies, particularly leveraging machine learning techniques to optimize resource allocation and improve adaptive strategies. I aim to contribute to the digital and intelligent evolution of wireless communications in the 6G era.</p>
@@ -217,78 +147,5 @@ body {
 
 <div class="cv-note">For detailed academic background and research experience, please refer to my <a href="../_pages/Lihan_Zheng_PhD_Application_CV.pdf">Curriculum Vitae</a>.</div>
 
-<script>
-// 彻底消除页面底部空白的强化解决方案
-(function() {
-    function forceRemoveBottomSpace() {
-        // 等待页面完全加载
-        setTimeout(function() {
-            // 获取实际内容高度
-            var mainContent = document.querySelector('.academic-profile') || 
-                             document.querySelector('.page__content') || 
-                             document.querySelector('#main') ||
-                             document.body;
-                             
-            if (mainContent) {
-                var contentHeight = mainContent.offsetHeight;
-                var windowHeight = window.innerHeight;
-                
-                // 强制设置所有可能影响高度的元素
-                var selectors = [
-                    'html', 'body', '.page', '.archive', '#main', 
-                    '.initial-content', '.page__content', '.wrapper',
-                    '.layout--single', '.page__wrapper', '.masthead',
-                    '.page__hero', '.page__hero--overlay'
-                ];
-                
-                selectors.forEach(function(selector) {
-                    var elements = document.querySelectorAll(selector);
-                    elements.forEach(function(element) {
-                        if (element) {
-                            element.style.setProperty('height', 'auto', 'important');
-                            element.style.setProperty('min-height', 'auto', 'important');
-                            element.style.setProperty('max-height', 'none', 'important');
-                        }
-                    });
-                });
-                
-                // 特别处理 body 和 html
-                document.body.style.setProperty('margin', '0', 'important');
-                document.body.style.setProperty('padding', '0', 'important');
-                document.documentElement.style.setProperty('height', 'auto', 'important');
-                document.documentElement.style.setProperty('min-height', 'auto', 'important');
-                
-                // 如果内容高度远小于窗口高度，强制调整
-                if (windowHeight - contentHeight > 200) {
-                    document.body.style.setProperty('height', (contentHeight + 100) + 'px', 'important');
-                    document.documentElement.style.setProperty('height', (contentHeight + 100) + 'px', 'important');
-                }
-                
-                // 移除任何可能的固定高度样式
-                var allElements = document.querySelectorAll('*');
-                for (var i = 0; i < allElements.length; i++) {
-                    var element = allElements[i];
-                    var computedStyle = window.getComputedStyle(element);
-                    if (computedStyle.minHeight && computedStyle.minHeight.indexOf('vh') > -1) {
-                        element.style.setProperty('min-height', 'auto', 'important');
-                    }
-                }
-            }
-        }, 100);
-    }
-    
-    // 多次执行以确保生效
-    document.addEventListener('DOMContentLoaded', forceRemoveBottomSpace);
-    window.addEventListener('load', forceRemoveBottomSpace);
-    
-    // 延迟执行，确保所有脚本都加载完毕
-    setTimeout(forceRemoveBottomSpace, 500);
-    setTimeout(forceRemoveBottomSpace, 1000);
-    setTimeout(forceRemoveBottomSpace, 2000);
-    
-    // 窗口大小改变时重新调整
-    window.addEventListener('resize', function() {
-        setTimeout(forceRemoveBottomSpace, 100);
-    });
-})();
-</script>
+</div>
+</div>
