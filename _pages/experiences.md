@@ -16,8 +16,8 @@ author_profile: true
   margin-bottom: 1.5em;
   padding: 1.2em;
   background: #fdfdfd;
-  border-left: 4px solid #1B4F72;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  border-left: 4px solid #023b53;
+  box-shadow: 0 2px 8px rgba(0,0,0,0);
   border-radius: 0 8px 8px 0;
 }
 
@@ -115,7 +115,7 @@ author_profile: true
   content: "▸";
   position: absolute;
   left: 0;
-  color: #1B4F72;
+  color: #023b53;
   font-weight: 600;
 }
 
