@@ -74,7 +74,7 @@ author:
   xing             : # Username
   youtube          : # Username
   zhihu            : # Username
-  wechat           : ./images/wechat-qrcode.png  # QR code image for WeChat placed in /images/ folder 
+  wechat           : ./images/wechat-qrcode.jpg  # QR code image for WeChat placed in /images/ folder 
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
