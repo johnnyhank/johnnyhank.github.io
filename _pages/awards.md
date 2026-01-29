@@ -27,7 +27,7 @@ author_profile: true
 }
 
 .award-name {
-  font-weight: 500;
+  font-weight: 400;
   color: #000000;
   text-align: left;
   font-size: 1em;
@@ -37,7 +37,7 @@ author_profile: true
   color: #000000;
   font-style: italic;
   text-align: center;
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 .award-date {
