@@ -1,5 +1,5 @@
 ---
-title: "Research & Project Experiences"
+title: "Experiences"
 permalink: /experiences/
 author_profile: true
 ---
@@ -216,7 +216,7 @@ author_profile: true
       </ul>
     </div>
     <div class="experience-highlights">
-      <h4 style="color: #1B4F72; font-size: 0.95em; margin: 0.8em 0 0.4em 0; font-weight: 600;">🏆 Honors & Awards</h4>
+      <h4 style="color: #000000; font-size: 0.95em; margin: 0.8em 0 0.4em 0; font-weight: 600;">Awards</h4>
       <ul class="highlight-list">
         <li class="highlight-item">First Prize(only one) of the OrangePi Campus Development Competition</li>
       </ul>
@@ -249,7 +249,7 @@ author_profile: true
       </ul>
     </div>
     <div class="experience-highlights">
-      <h4 style="color: #1B4F72; font-size: 0.95em; margin: 0.8em 0 0.4em 0; font-weight: 600;">🏆 Honors & Awards</h4>
+      <h4 style="color: #000000; font-size: 0.95em; margin: 0.8em 0 0.4em 0; font-weight: 600;">Awards</h4>
       <ul class="highlight-list">
         <li class="highlight-item">Third Prize(3rd in 12 groups) of the AIoT Group Project</li>
         <li class="highlight-item">Personal A+ Performance in the AIoT Course</li>
