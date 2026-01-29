@@ -216,7 +216,6 @@ body {
 </div>
 
 <div class="cv-note">For detailed academic background and research experience, please refer to my <a href="../_pages/Lihan_Zheng_PhD_Application_CV.pdf">Curriculum Vitae</a>.</div>
-</div>
 
 <script>
 // 彻底消除页面底部空白的强化解决方案
