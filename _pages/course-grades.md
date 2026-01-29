@@ -43,7 +43,7 @@ author_profile: true
 }
 
 .grade-score.excellent {
-  color: #174785;
+  color: #2b62ab;
 }
 
 .grade-score.great {
