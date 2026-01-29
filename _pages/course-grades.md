@@ -43,18 +43,15 @@ author_profile: true
 }
 
 .grade-score.excellent {
-  background-color: #1B4F72;
-  color: white;
+  color: #174785;
 }
 
 .grade-score.great {
-  background-color: #2E86AB;
-  color: white;
+  color: #4396e9;
 }
 
 .grade-score.good {
-  background-color: #A23B72;
-  color: white;
+  color: #7eaede;
 }
 
 @media (max-width: 768px) {
@@ -70,6 +67,11 @@ author_profile: true
 </style>
 
 <div class="grades-container">
+  <div class="grade-item">
+    <div class="course-name">Computational Communication Theory</div>
+    <div class="grade-score excellent">100</div>
+  </div>
+
   <div class="grade-item">
     <div class="course-name">Analog Electronic Technology</div>
     <div class="grade-score excellent">100</div>
