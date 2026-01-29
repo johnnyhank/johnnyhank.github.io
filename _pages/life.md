@@ -33,7 +33,6 @@ Books have the power to challenge perspectives and deepen our understanding of t
 - *To Live* (活着) — Human resilience amid twentieth-century Chinese history  
 - *La Porte Étroite* — A meditation on love, sacrifice, and spiritual pursuit
 
-
 ## Gaming
 
 Gaming provides both entertainment and artistic appreciation. I enjoy games that combine engaging gameplay with strong visual design and storytelling.
