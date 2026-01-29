@@ -66,7 +66,19 @@ author_profile: true
   <div class="award-item">
     <div class="award-name">National Scholarship</div>
     <div class="award-organization">Ministry of Education, PRC</div>
+    <div class="award-date">Dec 2025</div>
+  </div>
+
+  <div class="award-item">
+    <div class="award-name">National Scholarship</div>
+    <div class="award-organization">Ministry of Education, PRC</div>
     <div class="award-date">Dec 2024</div>
+  </div>
+
+  <div class="award-item">
+    <div class="award-name">The First Prize Scholarship</div>
+    <div class="award-organization">Shanghai Jiao Tong University</div>
+    <div class="award-date">Dec 2025</div>
   </div>
 
   <div class="award-item">
@@ -79,6 +91,12 @@ author_profile: true
     <div class="award-name">The Third Prize Scholarship</div>
     <div class="award-organization">Shanghai Jiao Tong University</div>
     <div class="award-date">Dec 2023</div>
+  </div>
+
+  <div class="award-item">
+    <div class="award-name">Three Good Student</div>
+    <div class="award-organization">Shanghai Jiao Tong University</div>
+    <div class="award-date">Oct 2025</div>
   </div>
 
   <div class="award-item">
