@@ -8,7 +8,7 @@ author_profile: true
 
 Life is about everything that shapes who we are. Here are some activities and interests that bring balance to my life.
 
-## 🏃‍♂️ Sports
+## Sports
 
 Physical activity is an essential part of my routine, supporting both physical health and mental clarity.
 
@@ -16,7 +16,7 @@ Physical activity is an essential part of my routine, supporting both physical h
 **Running**: A meditative way to clear my mind and build endurance.  
 **Swimming**: A full-body workout that is both effective and relaxing.
 
-## 🎵 Music
+## Music
 
 Music has been a long-standing part of my life, both as a performer and an enthusiastic listener.
 
@@ -24,7 +24,7 @@ Music has been a long-standing part of my life, both as a performer and an enthu
 
 **Musical Taste**: My listening interests span multiple genres, with a particular fondness for music characterized by freedom, emotion, and lyrical depth. I am especially drawn to Chinese artists such as Faye Wong, Pu Shu, and Li Jian, as well as international artists like Prince.
 
-## 📚 Reading
+## Reading
 
 Books have the power to challenge perspectives and deepen our understanding of the human condition. I am particularly drawn to literature that combines philosophical reflection with social insight.
 
@@ -34,7 +34,7 @@ Books have the power to challenge perspectives and deepen our understanding of t
 - *La Porte Étroite* — A meditation on love, sacrifice, and spiritual pursuit
 
 
-## 🎮 Gaming
+## Gaming
 
 Gaming provides both entertainment and artistic appreciation. I enjoy games that combine engaging gameplay with strong visual design and storytelling.
 
