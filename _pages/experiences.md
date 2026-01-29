@@ -29,7 +29,7 @@ author_profile: true
 .experience-title {
   font-size: 1.1em;
   font-weight: 600;
-  color: #2c3e50;
+  color: #000000;
   margin-bottom: 0.4em;
   margin-top: 0;
   line-height: 1.3;
