@@ -78,7 +78,7 @@ author_profile: true
 }
 
 .supervisor-info a {
-  color: #2E86AB;
+  color: #023b53;
   text-decoration: none;
   font-weight: 500;
 }
@@ -147,11 +147,11 @@ author_profile: true
       <div class="experience-meta">
         <div class="meta-item">
           <span class="meta-icon">📅</span>
-          <span><strong>June 2025 - Present</strong></span>
+          <span>June 2025 - Present</span>
         </div>
         <div class="meta-item">
           <span class="meta-icon">🏢</span>
-          <span><em>Summer Internship, SJTU</em></span>
+          <span><em>Summer Internship and Undergraduate Thesis, SJTU</em></span>
         </div>
       </div>
       <div class="supervisor-info">
@@ -159,7 +159,7 @@ author_profile: true
       </div>
     </div>
     <div class="experience-description">
-      Conducting theoretical study and simulation-based research on <strong>Orthogonal Time Frequency Space (OTFS) modulation</strong> in the <strong>delay-Doppler domain</strong> for <strong>high-mobility wireless communications</strong>.
+      Conducting theoretical study and simulation-based research on Orthogonal Time Frequency Space (OTFS) modulation in the delay-Doppler domain for high-mobility wireless communications.
     </div>
   </div>
 
@@ -169,7 +169,7 @@ author_profile: true
       <div class="experience-meta">
         <div class="meta-item">
           <span class="meta-icon">📅</span>
-          <span><strong>Feb 2025 - May 2025</strong></span>
+          <span>February 2025 - May 2025</span>
         </div>
         <div class="meta-item">
           <span class="meta-icon">🏢</span>
@@ -177,14 +177,14 @@ author_profile: true
         </div>
       </div>
       <div class="supervisor-info">
-        Supervisor: <a href="https://wnt.sjtu.edu.cn/qingqingwu/index.html">Assoc. Prof. Qingqing Wu</a>
+        Supervisor: Assoc. Prof. <a href="https://wnt.sjtu.edu.cn/qingqingwu/index.html">Qingqing Wu</a>
       </div>
     </div>
     <div class="experience-highlights">
       <ul class="highlight-list">
-        <li class="highlight-item">Conducted literature review on related research topics and reproduced several relevant <strong>GitHub projects</strong>.</li>
-        <li class="highlight-item">Proposed an innovative <strong>hybrid precoder architecture</strong> with the relief of the constraint of the <strong>phase shifters</strong> to optimize <strong>S(I)NR</strong>.</li>
-        <li class="highlight-item">Applied <strong>(MA)DDPG</strong> and <strong>SAC</strong> to design the <strong>MU-SISO</strong> and <strong>MU-MISO</strong> hybrid precoder based on <strong>deep reinforcement learning</strong>.</li>
+        <li class="highlight-item">Conducted literature review on related research topics and reproduced several relevant GitHub projects.</li>
+        <li class="highlight-item">Proposed an innovative hybrid precoder architecture with the relief of the constraint of the phase shifters to optimize S(I)NR.</li>
+        <li class="highlight-item">Applied (MA)DDPG and SAC to design the MU-SISO and MU-MISO hybrid precoder based on deep reinforcement learning.</li>
       </ul>
     </div>
   </div>
@@ -197,7 +197,7 @@ author_profile: true
       <div class="experience-meta">
         <div class="meta-item">
           <span class="meta-icon">📅</span>
-          <span><strong>May 2025</strong></span>
+          <span>May 2025</span>
         </div>
         <div class="meta-item">
           <span class="meta-icon">🏢</span>
@@ -210,9 +210,9 @@ author_profile: true
     </div>
     <div class="experience-highlights">
       <ul class="highlight-list">
-        <li class="highlight-item">Built a <strong>Gradio interface</strong> for voice, text, and image input with speech output, context memory, and device control (<strong>robotic arm</strong> & <strong>Micro:bit</strong>).</li>
-        <li class="highlight-item">Used <strong>Qwen-Plus</strong> to understand instructions and trigger actions like weather queries, <strong>DB operations</strong>, robot control, and image understanding via <strong>Qwen-VL</strong>.</li>
-        <li class="highlight-item">Implemented <strong>Function Calling</strong> and <strong>MCP</strong> in <strong>Qwen Agent</strong> for tool integration.</li>
+        <li class="highlight-item">Built a Gradio interface for voice, text, and image input with speech output, context memory, and device control (robotic arm & Micro:bit).</li>
+        <li class="highlight-item">Used Qwen-Plus to understand instructions and trigger actions like weather queries, database operations, robot control, and image understanding via Qwen-VL.</li>
+        <li class="highlight-item">Implemented function calling and MCP in Qwen Agent for tool integration.</li>
       </ul>
     </div>
     <div class="experience-highlights">
@@ -231,7 +231,7 @@ author_profile: true
       <div class="experience-meta">
         <div class="meta-item">
           <span class="meta-icon">📅</span>
-          <span><strong>July 2024</strong></span>
+          <span>July 2024</span>
         </div>
         <div class="meta-item">
           <span class="meta-icon">🏢</span>
@@ -244,8 +244,8 @@ author_profile: true
     </div>
     <div class="experience-highlights">
       <ul class="highlight-list">
-        <li class="highlight-item">Developed a <strong>sensor network</strong> and processed fatigue-related data using <strong>RPi</strong> and <strong>ESP32</strong> with <strong>MQTT</strong> for data transmission.</li>
-        <li class="highlight-item">Built a website for <strong>data visualization</strong> and <strong>video monitoring</strong> with <strong>WebSocket</strong> and <strong>MJPG-Streamer</strong>.</li>
+        <li class="highlight-item">Developed a sensor network and processed fatigue-related data using RPi and ESP32 with MQTT for data transmission.</li>
+        <li class="highlight-item">Built a website for data visualization and video monitoring with WebSocket and MJPG-Streamer.</li>
       </ul>
     </div>
     <div class="experience-highlights">
