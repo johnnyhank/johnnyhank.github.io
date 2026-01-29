@@ -83,7 +83,7 @@ author_profile: true
   </div>
 
   <div class="grade-item">
-    <div class="course-name"><strong>The Practice Course of Artificial Intelligence</strong></div>
+    <div class="course-name">The Practice Course of Artificial Intelligence</div>
     <div class="grade-score excellent">100</div>
   </div>
 
@@ -98,7 +98,7 @@ author_profile: true
   </div>
 
   <div class="grade-item">
-    <div class="course-name"><strong>Principle of Communications</strong></div>
+    <div class="course-name">Principle of Communications</div>
     <div class="grade-score great">96</div>
   </div>
 
@@ -108,17 +108,17 @@ author_profile: true
   </div>
 
   <div class="grade-item">
-    <div class="course-name"><strong>Video Coding and Communication</strong></div>
+    <div class="course-name">Video Coding and Communication</div>
     <div class="grade-score great">96</div>
   </div>
 
   <div class="grade-item">
-    <div class="course-name"><strong>Digital Signal Processing</strong></div>
+    <div class="course-name">Digital Signal Processing</div>
     <div class="grade-score great">95</div>
   </div>
 
   <div class="grade-item">
-    <div class="course-name"><strong>Principles Wireless Communication and Mobile Networks</strong></div>
+    <div class="course-name">Principles Wireless Communication and Mobile Networks</div>
     <div class="grade-score good">94</div>
   </div>
 
@@ -128,7 +128,7 @@ author_profile: true
   </div>
 
   <div class="grade-item">
-    <div class="course-name"><strong>Machine Learning</strong></div>
+    <div class="course-name">Machine Learning</div>
     <div class="grade-score good">93</div>
   </div>
 
@@ -148,7 +148,7 @@ author_profile: true
   </div>
 
   <div class="grade-item">
-    <div class="course-name"><strong>Reinforcement Learning</strong></div>
+    <div class="course-name">Reinforcement Learning</div>
     <div class="grade-score good">92</div>
   </div>
 </div>
