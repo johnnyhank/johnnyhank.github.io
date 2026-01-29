@@ -28,20 +28,20 @@ author_profile: true
 
 .award-name {
   font-weight: 500;
-  color: #2c3e50;
+  color: #000000;
   text-align: left;
   font-size: 0.9em;
 }
 
 .award-organization {
-  color: #2E86AB;
+  color: #000000;
   font-style: italic;
   text-align: center;
   font-size: 0.9em;
 }
 
 .award-date {
-  color: #1B4F72;
+  color: #000000;
   font-weight: 500;
   text-align: right;
   white-space: nowrap;
