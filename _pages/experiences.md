@@ -17,7 +17,7 @@ author_profile: true
   padding: 1.2em;
   background: #fdfdfd;
   border-left: 4px solid #023b53;
-  box-shadow: 0 2px 8px rgba(0,0,0,0);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
   border-radius: 0 8px 8px 0;
 }
 
