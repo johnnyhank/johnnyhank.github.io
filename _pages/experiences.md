@@ -73,7 +73,7 @@ author_profile: true
 
 .supervisor-info {
   font-size: 0.85em;
-  color: #495057;
+  color: #000000;
   font-style: italic;
 }
 
@@ -88,7 +88,7 @@ author_profile: true
 }
 
 .experience-description {
-  color: #495057;
+  color: #000000;
   line-height: 1.6;
   margin-top: 0.6em;
 }
@@ -107,7 +107,7 @@ author_profile: true
   position: relative;
   padding-left: 1.5em;
   margin-bottom: 0.4em;
-  color: #495057;
+  color: #000000;
   line-height: 1.5;
 }
 
@@ -146,11 +146,9 @@ author_profile: true
       <h3 class="experience-title">Research on Delay Doppler Communication</h3>
       <div class="experience-meta">
         <div class="meta-item">
-          <span class="meta-icon">📅</span>
           <span>June 2025 - Present</span>
         </div>
         <div class="meta-item">
-          <span class="meta-icon">🏢</span>
           <span><em>Summer Internship and Undergraduate Thesis, SJTU</em></span>
         </div>
       </div>
@@ -168,11 +166,9 @@ author_profile: true
       <h3 class="experience-title">Novel Hybrid Precoder Based on Deep Reinforcement Learning</h3>
       <div class="experience-meta">
         <div class="meta-item">
-          <span class="meta-icon">📅</span>
           <span>February 2025 - May 2025</span>
         </div>
         <div class="meta-item">
-          <span class="meta-icon">🏢</span>
           <span><em>Electronic Engineering Talent Development Program, SJTU</em></span>
         </div>
       </div>
@@ -196,16 +192,14 @@ author_profile: true
       </h3>
       <div class="experience-meta">
         <div class="meta-item">
-          <span class="meta-icon">📅</span>
           <span>May 2025</span>
         </div>
         <div class="meta-item">
-          <span class="meta-icon">🏢</span>
           <span><em>Course Project for AI1101, SJTU Student Innovation Center</em></span>
         </div>
       </div>
       <div class="supervisor-info">
-        Supervisor: <a href="https://www.si.sjtu.edu.cn/content/person-detail?params=69203cf7b7cf4f88bb55c94bd1f47646&menuIds=2,7,12l">Sr. Eng. Pengzhi Chu</a>
+        Supervisor: Sr. Eng. <a href="https://www.si.sjtu.edu.cn/content/person-detail?params=69203cf7b7cf4f88bb55c94bd1f47646&menuIds=2,7,12l">Pengzhi Chu</a>
       </div>
     </div>
     <div class="experience-highlights">
@@ -230,16 +224,14 @@ author_profile: true
       </h3>
       <div class="experience-meta">
         <div class="meta-item">
-          <span class="meta-icon">📅</span>
           <span>July 2024</span>
         </div>
         <div class="meta-item">
-          <span class="meta-icon">🏢</span>
           <span><em>Group Project for NUS SoC Summer Workshop</em></span>
         </div>
       </div>
       <div class="supervisor-info">
-        Supervisor: <a href="https://www.comp.nus.edu.sg/disa/people/tanwk/">Assoc. Prof. TAN Wee Kek</a>
+        Supervisor: Assoc. Prof. <a href="https://www.comp.nus.edu.sg/disa/people/tanwk/">TAN Wee Kek</a>
       </div>
     </div>
     <div class="experience-highlights">
