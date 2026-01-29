@@ -43,12 +43,12 @@ redirect_from:
 }
 
 .quote-author {
-  font-size: 0.7em;
+  font-size: 0.75em;
   color: #6c757d;
   font-weight: 400;
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+  letter-spacing: 0.2px;
+  text-transform: none;
 }
 
 .intro-section p {
@@ -135,7 +135,7 @@ redirect_from:
 
 <div class="quote-section">
 <div class="quote-text">"The past is known but fixed; the future is unknown but shaped by design."</div>
-<div class="quote-author">—— In the spirits of Claude Shannon and Tao Yuanming</div>
+<div class="quote-author">— In the spirit of Claude Shannon and Tao Yuanming</div>
 </div>
 
 <div class="intro-section">
