@@ -113,12 +113,12 @@ author_profile: true
   </div>
 
   <div class="grade-item">
-    <div class="course-name">The Practice Course of Artificial Intelligence</div>
+    <div class="course-name">Artificial Intelligence Practice</div>
     <div class="grade-score excellent">100</div>
   </div>
 
   <div class="grade-item">
-    <div class="course-name">Mathematical Physics Method in Electronic</div>
+    <div class="course-name">Mathematical Physics Methods in Electronics</div>
     <div class="grade-score great">97</div>
   </div>
 
@@ -128,7 +128,7 @@ author_profile: true
   </div>
 
   <div class="grade-item">
-    <div class="course-name">Principle of Communications</div>
+    <div class="course-name">Principles of Communications</div>
     <div class="grade-score great">96</div>
   </div>
 
@@ -148,7 +148,7 @@ author_profile: true
   </div>
 
   <div class="grade-item">
-    <div class="course-name">Principles Wireless Communication and Mobile Networks</div>
+    <div class="course-name">Principles of Wireless Communication and Mobile Networks</div>
     <div class="grade-score good">94</div>
   </div>
 

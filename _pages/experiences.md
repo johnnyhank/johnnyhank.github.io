@@ -143,7 +143,7 @@ author_profile: true
 
   <div class="experience-item">
     <div class="experience-header">
-      <h3 class="experience-title">Research on Delay Doppler Communication</h3>
+      <h3 class="experience-title">Research on Delay-Doppler Communications</h3>
       <div class="experience-meta">
         <div class="meta-item">
           <span>June 2025 - Present</span>
@@ -179,8 +179,8 @@ author_profile: true
     <div class="experience-highlights">
       <ul class="highlight-list">
         <li class="highlight-item">Conducted literature review on related research topics and reproduced several relevant GitHub projects.</li>
-        <li class="highlight-item">Proposed an innovative hybrid precoder architecture with the relief of the constraint of the phase shifters to optimize S(I)NR.</li>
-        <li class="highlight-item">Applied (MA)DDPG and SAC to design the MU-SISO and MU-MISO hybrid precoder based on deep reinforcement learning.</li>
+        <li class="highlight-item">Proposed an innovative hybrid precoder architecture that relaxes phase-shifter constraints to optimize S(I)NR.</li>
+        <li class="highlight-item">Applied (MA)DDPG and SAC to design MU-SISO and MU-MISO hybrid precoders based on deep reinforcement learning.</li>
       </ul>
     </div>
   </div>
@@ -205,14 +205,14 @@ author_profile: true
     <div class="experience-highlights">
       <ul class="highlight-list">
         <li class="highlight-item">Built a Gradio interface for voice, text, and image input with speech output, context memory, and device control (robotic arm & Micro:bit).</li>
-        <li class="highlight-item">Used Qwen-Plus to understand instructions and trigger actions like weather queries, database operations, robot control, and image understanding via Qwen-VL.</li>
+        <li class="highlight-item">Used Qwen-Plus to understand instructions and trigger actions such as weather queries, database operations, robot control, and image understanding via Qwen-VL.</li>
         <li class="highlight-item">Implemented function calling and MCP in Qwen Agent for tool integration.</li>
       </ul>
     </div>
     <div class="experience-highlights">
       <h4 style="color: #000000; font-size: 0.95em; margin: 0.8em 0 0.4em 0; font-weight: 600;">Awards</h4>
       <ul class="highlight-list">
-        <li class="highlight-item">First Prize(only one) of the OrangePi Campus Development Competition</li>
+        <li class="highlight-item">First Prize (sole award) in the OrangePi Campus Development Competition</li>
       </ul>
     </div>
   </div>
@@ -220,7 +220,7 @@ author_profile: true
   <div class="experience-item">
     <div class="experience-header">
       <h3 class="experience-title">
-        <a href="https://github.com/8zym/AIOT_group3">Smart Driver Monitor System Based on IoT</a>
+        <a href="https://github.com/8zym/AIOT_group3">IoT-Based Smart Driver Monitoring System</a>
       </h3>
       <div class="experience-meta">
         <div class="meta-item">
@@ -243,8 +243,8 @@ author_profile: true
     <div class="experience-highlights">
       <h4 style="color: #000000; font-size: 0.95em; margin: 0.8em 0 0.4em 0; font-weight: 600;">Awards</h4>
       <ul class="highlight-list">
-        <li class="highlight-item">Third Prize(3rd in 12 groups) of the AIoT Group Project</li>
-        <li class="highlight-item">Personal A+ Performance in the AIoT Course</li>
+        <li class="highlight-item">Third Prize (3rd among 12 groups) in the AIoT Group Project</li>
+        <li class="highlight-item">Individual A+ Performance in the AIoT Course</li>
       </ul>
     </div>
   </div>

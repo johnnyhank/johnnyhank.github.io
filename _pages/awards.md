@@ -76,31 +76,31 @@ author_profile: true
   </div>
 
   <div class="award-item">
-    <div class="award-name">The First Prize Scholarship</div>
+    <div class="award-name">First Prize Scholarship</div>
     <div class="award-organization">Shanghai Jiao Tong University</div>
     <div class="award-date">December 2025</div>
   </div>
 
   <div class="award-item">
-    <div class="award-name">The Second Prize Scholarship</div>
+    <div class="award-name">Second Prize Scholarship</div>
     <div class="award-organization">Shanghai Jiao Tong University</div>
     <div class="award-date">December 2024</div>
   </div>
 
   <div class="award-item">
-    <div class="award-name">The Third Prize Scholarship</div>
+    <div class="award-name">Third Prize Scholarship</div>
     <div class="award-organization">Shanghai Jiao Tong University</div>
     <div class="award-date">December 2023</div>
   </div>
 
   <div class="award-item">
-    <div class="award-name">Three Good Student</div>
+    <div class="award-name">Three-Good Student</div>
     <div class="award-organization">Shanghai Jiao Tong University</div>
     <div class="award-date">October 2025</div>
   </div>
 
   <div class="award-item">
-    <div class="award-name">Three Good Student</div>
+    <div class="award-name">Three-Good Student</div>
     <div class="award-organization">Shanghai Jiao Tong University</div>
     <div class="award-date">October 2023</div>
   </div>
@@ -112,14 +112,14 @@ author_profile: true
   </div>
 
   <div class="award-item">
-    <div class="award-name">The Third Prize of National Mathematical Modeling Contest</div>
+    <div class="award-name">Third Prize in the National Mathematical Modeling Contest</div>
     <div class="award-organization">Shanghai Municipal Education Commission</div>
     <div class="award-date">November 2023</div>
   </div>
 
   <div class="award-item">
-    <div class="award-name">Successful Participant of Mathematical Contest In Modeling</div>
-    <div class="award-organization">Consortium for Mathematics and its Applications</div>
+    <div class="award-name">Successful Participant, Mathematical Contest in Modeling</div>
+    <div class="award-organization">Consortium for Mathematics and Its Applications</div>
     <div class="award-date">May 2025</div>
   </div>
 </div>
