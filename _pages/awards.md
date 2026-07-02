@@ -64,6 +64,11 @@ author_profile: true
 
 <div class="awards-container">
   <div class="award-item">
+    <div class="award-name">Outstanding Graduates</div>
+    <div class="award-organization">Shanghai Municipal Education Commission</div>
+    <div class="award-date">June 2026</div>
+  </div>
+  <div class="award-item">
     <div class="award-name">National Scholarship</div>
     <div class="award-organization">Ministry of Education, PRC</div>
     <div class="award-date">December 2025</div>
@@ -94,13 +99,13 @@ author_profile: true
   </div>
 
   <div class="award-item">
-    <div class="award-name">Three-Good Student</div>
+    <div class="award-name">Merit Student</div>
     <div class="award-organization">Shanghai Jiao Tong University</div>
     <div class="award-date">October 2025</div>
   </div>
 
   <div class="award-item">
-    <div class="award-name">Three-Good Student</div>
+    <div class="award-name">Merit Student</div>
     <div class="award-organization">Shanghai Jiao Tong University</div>
     <div class="award-date">October 2023</div>
   </div>
