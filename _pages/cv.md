@@ -13,7 +13,7 @@ published: false
 Education
 ======
 
-* Direct Ph.D. student in Wireless Communications, Shanghai Jiao Tong University, 2026-present
+* Ph.D. student in Wireless Communications, Shanghai Jiao Tong University, 2026-present
 * B.S. in Information Engineering, Shanghai Jiao Tong University, 2026
 
 <!--

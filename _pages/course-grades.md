@@ -13,6 +13,27 @@ author_profile: true
   margin: 15px 0;
 }
 
+.course-section {
+  margin-bottom: 2em;
+}
+
+.course-section h2 {
+  margin-bottom: 0.3em;
+}
+
+.course-note {
+  margin: 0 0 1em 0;
+  color: #6c757d;
+  font-size: 0.95em;
+}
+
+.empty-coursework {
+  padding: 12px 0;
+  color: #6c757d;
+  font-style: italic;
+  border-bottom: 1px solid #eee;
+}
+
 .grade-item {
   display: flex;
   justify-content: space-between;
@@ -65,6 +86,15 @@ author_profile: true
   }
 }
 </style>
+
+<div class="course-section">
+  <h2>Ph.D. Coursework</h2>
+  <div class="empty-coursework">To be updated.</div>
+</div>
+
+<div class="course-section">
+  <h2>Undergraduate Coursework</h2>
+  <p class="course-note">Selected courses completed during my undergraduate study at Shanghai Jiao Tong University.</p>
 
 <div class="grades-container">
   <div class="grade-item">
@@ -151,4 +181,5 @@ author_profile: true
     <div class="course-name">Reinforcement Learning</div>
     <div class="grade-score good">92</div>
   </div>
+</div>
 </div>

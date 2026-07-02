@@ -12,7 +12,7 @@ site_theme               : "default"
 title                    : "Personal Homepage"
 title_separator          : "-"
 name                     : &name "Lihan Zheng"
-description              : &description "A direct Ph.D. student in wireless communications at Shanghai Jiao Tong University"
+description              : &description "A Ph.D. student in wireless communications at Shanghai Jiao Tong University"
 url                      : https://johnnyhank.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "johnnyhank/johnnyhank.github.io"
@@ -22,10 +22,10 @@ repository               : "johnnyhank/johnnyhank.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "6661741252342_.png"
+  avatar           : "casual_photo.png"
   name             : "Lihan Zheng"
   pronouns         : "he/him"  
-  bio              : "A direct Ph.D. student focusing on wireless communications."
+  bio              : "A Ph.D. student focusing on wireless communications."
   location         : "Shanghai"
   employer         : "Shanghai Jiao Tong University"
   uri              : # URL
@@ -35,7 +35,7 @@ author:
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
-  orcid            : #"http://orcid.org/yourorcidurl"
+  orcid            : "http://orcid.org/0009-0004-3656-2598"
   semantic         : # URL
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
