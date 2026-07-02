@@ -13,12 +13,8 @@ published: false
 Education
 ======
 
-<!--
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
--->
-
-* B.S. in Shanghai Jiao Tong University, 2026(expected)
+* Direct Ph.D. student in Wireless Communications, Shanghai Jiao Tong University, 2026-present
+* B.S. in Information Engineering, Shanghai Jiao Tong University, 2026
 
 <!--
 

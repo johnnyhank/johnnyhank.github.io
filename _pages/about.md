@@ -139,13 +139,13 @@ redirect_from:
 </div>
 
 <div class="intro-section">
-<p>I am a fourth-year undergraduate student at the <span class="affiliation"><a href="https://icisee.sjtu.edu.cn/">School of Integrated Circuits (School of Information Science and Electronic Engineering)</a></span>, <span class="affiliation"><a href="https://www.sjtu.edu.cn">Shanghai Jiao Tong University</a></span>, and will begin my Ph.D. program there in September 2026.</p>
+<p>I am a direct Ph.D. student at the <span class="affiliation"><a href="https://icisee.sjtu.edu.cn/">School of Integrated Circuits (School of Information Science and Electronic Engineering)</a></span>, <span class="affiliation"><a href="https://www.sjtu.edu.cn">Shanghai Jiao Tong University</a></span>. I received my B.S. degree in Information Engineering from Shanghai Jiao Tong University in 2026.</p>
 
 <div class="research-section">
 <p class="research-description">My research interests focus on physical layer technologies in wireless communications, including OTFS modulation, channel modeling and multiple access, under the supervision of Associate Professor <span class="affiliation"><a href="https://icisee.sjtu.edu.cn/jiaoshiml/sunshu.html">Shu Sun</a></span> at the Institute of Wireless Communication Technology, Shanghai Jiao Tong University. I am also interested in the integration of artificial intelligence and wireless communication technologies. I aim to contribute to the digital and intelligent evolution of wireless communications in the 6G era.</p>
 </div>
 
-<div class="cv-note">For detailed academic background and research experience, please refer to my <a href="../_pages/Lihan_Zheng_PhD_Application_CV.pdf">Curriculum Vitae</a>.</div>
+<div class="cv-note">For detailed academic background and research experience, please refer to my <a href="/files/Lihan_Zheng_CV.pdf">Curriculum Vitae</a>.</div>
 
 </div>
 </div>
