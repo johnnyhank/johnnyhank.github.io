@@ -135,7 +135,7 @@ redirect_from:
 
 <div class="quote-section">
 <div class="quote-text">"The past is known but fixed; the future is unknown but shaped by design."</div>
-<div class="quote-author">— In the spirit of Claude Shannon and Tao Yuanming</div>
+<div class="quote-author">— In the spirit of Claude Shannon and 陶渊明</div>
 </div>
 
 <div class="intro-section">
