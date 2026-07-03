@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Personal Homepage"
+title                    : "Lihan Zheng"
 title_separator          : "-"
 name                     : &name "Lihan Zheng"
 description              : &description "A Ph.D. student in wireless communications at Shanghai Jiao Tong University"
